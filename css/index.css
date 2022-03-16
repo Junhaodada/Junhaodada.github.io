@@ -907,7 +907,7 @@ body::after {
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: url("/images/bgc_nav.png") no-repeat center/cover;
 }
 .header-banner::before {
