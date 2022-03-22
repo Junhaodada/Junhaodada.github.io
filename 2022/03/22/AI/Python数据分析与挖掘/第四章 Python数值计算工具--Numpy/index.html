@@ -1,0 +1,560 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="忘川之上，桑梓之下。一半是光，一半是影。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python数值计算工具——Numpy">
+<meta property="og:url" content="https://junhaodada.github.io/2022/03/22/AI/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/index.html">
+<meta property="og:site_name" content="JunHao的博客">
+<meta property="og:description" content="忘川之上，桑梓之下。一半是光，一半是影。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322202657.jpg">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322195103.jpeg">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322200132.jpg">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322201901.jpg">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322202509.jpg">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322203141.png">
+<meta property="og:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322203147.png">
+<meta property="article:published_time" content="2022-03-22T12:35:59.000Z">
+<meta property="article:modified_time" content="2022-03-22T12:37:30.085Z">
+<meta property="article:author" content="JunHao">
+<meta property="article:tag" content="数据挖掘">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322202657.jpg"><title>Python数值计算工具——Numpy | JunHao的博客</title><link ref="canonical" href="https://junhaodada.github.io/2022/03/22/AI/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":true},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/author/"><span class="header-nav-menu-item__icon"><i class="fas fa-address-card"></i></span><span class="header-nav-menu-item__text">关于</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">JunHao的博客</div><div class="header-banner-info__subtitle">You will be make a difference!</div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><div class="custompage"><blockquote>
+<p>忘川之上，桑梓之下。一半是光，一半是影。</p>
+</blockquote>
+<span id="more"></span>
+
+        <h1 id="Python数值计算工具——Numpy"   >
+          <a href="#Python数值计算工具——Numpy" class="heading-link"><i class="fas fa-link"></i></a><a href="#Python数值计算工具——Numpy" class="headerlink" title="Python数值计算工具——Numpy"></a>Python数值计算工具——Numpy</h1>
+      
+    <div id="aplayer-JWZDEUgY" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="7328081945" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="800px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
+<hr>
+
+<ul>
+<li>数组的创建与操作； </li>
+<li>数组的基本数学运算； </li>
+<li>常用数学和统计函数； </li>
+<li>线性代数的求解； </li>
+<li>伪随机数的创建。</li>
+</ul>
+
+        <h2 id="4-1-数组的创建与操作"   >
+          <a href="#4-1-数组的创建与操作" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1-数组的创建与操作" class="headerlink" title="4.1 数组的创建与操作"></a>4.1 数组的创建与操作</h2>
+      
+        <h3 id="4-1-1-数组的创建"   >
+          <a href="#4-1-1-数组的创建" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1-1-数组的创建" class="headerlink" title="4.1.1 数组的创建"></a>4.1.1 数组的创建</h3>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入模块，并重命名为np</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 单个列表创建一维数组</span></span><br><span class="line">arr1 = np.array([<span class="number">3</span>,<span class="number">10</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">34</span>,<span class="number">11</span>,<span class="number">28</span>,<span class="number">72</span>])</span><br><span class="line"><span class="comment"># 嵌套元组创建二维数组</span></span><br><span class="line">arr2 = np.array(((<span class="number">8.5</span>,<span class="number">6</span>,<span class="number">4.1</span>,<span class="number">2</span>,<span class="number">0.7</span>),(<span class="number">1.5</span>,<span class="number">3</span>,<span class="number">5.4</span>,<span class="number">7.3</span>,<span class="number">9</span>),(<span class="number">3.2</span>,<span class="number">3</span>,<span class="number">3.8</span>,<span class="number">3</span>,<span class="number">3</span>),(<span class="number">11.2</span>,<span class="number">13.4</span>,<span class="number">15.6</span>,<span class="number">17.8</span>,<span class="number">19</span>)))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;一维数组：\n&#x27;</span>,arr1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;二维数组：\n&#x27;</span>,arr2)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>一维数组：
+ [ 3 10  8  7 34 11 28 72]
+二维数组：
+ [[ 8.5  6.   4.1  2.   0.7]
+ [ 1.5  3.   5.4  7.3  9. ]
+ [ 3.2  3.   3.8  3.   3. ]
+ [11.2 13.4 15.6 17.8 19. ]]
+</code></pre>
+
+        <h3 id="4-1-2-数组元素的获取"   >
+          <a href="#4-1-2-数组元素的获取" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1-2-数组元素的获取" class="headerlink" title="4.1.2 数组元素的获取"></a>4.1.2 数组元素的获取</h3>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一维数组元素的获取</span></span><br><span class="line"><span class="built_in">print</span>(arr1[[<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>]])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 二维数组元素的获取</span></span><br><span class="line"><span class="comment"># 第2行第3列元素</span></span><br><span class="line"><span class="built_in">print</span>(arr2[<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line"><span class="comment"># 第3行所有元素</span></span><br><span class="line"><span class="built_in">print</span>(arr2[<span class="number">2</span>,:])</span><br><span class="line"><span class="comment"># 第2列所有元素</span></span><br><span class="line"><span class="built_in">print</span>(arr2[:,<span class="number">1</span>])</span><br><span class="line"><span class="comment"># 第2至4行，2至5行</span></span><br><span class="line"><span class="built_in">print</span>(arr2[<span class="number">1</span>:<span class="number">4</span>,<span class="number">1</span>:<span class="number">5</span>])</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>[ 8  7 11 72]
+5.4
+[3.2 3.  3.8 3.  3. ]
+[ 6.   3.   3.  13.4]
+[[ 3.   5.4  7.3  9. ]
+ [ 3.   3.8  3.   3. ]
+ [13.4 15.6 17.8 19. ]]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一行、最后一行和第二列、第四列构成的数组</span></span><br><span class="line"><span class="built_in">print</span>(arr2[[<span class="number">0</span>,-<span class="number">1</span>],[<span class="number">1</span>,<span class="number">3</span>]]) <span class="comment"># [ 6.  17.8]</span></span><br><span class="line"><span class="comment"># 第一行、最后一行和第一列、第三列、第四列构成的数组</span></span><br><span class="line"><span class="built_in">print</span>(arr2[[<span class="number">0</span>,-<span class="number">1</span>],[<span class="number">0</span>,<span class="number">2</span>,<span class="number">3</span>]]) <span class="comment"># 报错</span></span><br></pre></td></tr></table></div></figure>
+
+<pre><code>[ 6.  17.8]
+
+
+
+---------------------------------------------------------------------------
+
+IndexError                                Traceback (most recent call last)
+
+c:\Users\HP\Desktop\数据挖掘\Python数据分析与挖掘源码\第4章 Python数值计算工具--Numpy\第四章 Python数值计算工具--Numpy.ipynb Cell 3&#39; in &lt;cell line: 4&gt;()
+      &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/HP/Desktop/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98%E6%BA%90%E7%A0%81/%E7%AC%AC4%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy.ipynb#ch0000002?line=1&#39;&gt;2&lt;/a&gt; print(arr2[[0,-1],[1,3]])
+      &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/HP/Desktop/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98%E6%BA%90%E7%A0%81/%E7%AC%AC4%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy.ipynb#ch0000002?line=2&#39;&gt;3&lt;/a&gt; # 第一行、最后一行和第一列、第三列、第四列构成的数组
+----&gt; &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/HP/Desktop/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98%E6%BA%90%E7%A0%81/%E7%AC%AC4%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy.ipynb#ch0000002?line=3&#39;&gt;4&lt;/a&gt; print(arr2[[0,-1],[0,2,3]])
+
+
+IndexError: shape mismatch: indexing arrays could not be broadcast together with shapes (2,) (3,) 
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一行、最后一行和第二列、第四列构成的数组</span></span><br><span class="line"><span class="built_in">print</span>(arr2[np.ix_([<span class="number">0</span>,-<span class="number">1</span>],[<span class="number">1</span>,<span class="number">3</span>])])</span><br><span class="line"><span class="comment"># 第一行、最后一行和第一列、第三列、第四列构成的数组</span></span><br><span class="line"><span class="built_in">print</span>(arr2[np.ix_([<span class="number">0</span>,-<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])])</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>[[ 6.   2. ]
+ [13.4 17.8]]
+[[ 6.   4.1  2. ]
+ [13.4 15.6 17.8]]
+</code></pre>
+
+        <h3 id="4-1-3-数组的常用属性"   >
+          <a href="#4-1-3-数组的常用属性" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1-3-数组的常用属性" class="headerlink" title="4.1.3 数组的常用属性"></a>4.1.3 数组的常用属性</h3>
+      <p>stu_socre.txt内容</p>
+<p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322202657.jpg"></p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读入数据</span></span><br><span class="line">stu_score = np.genfromtxt(fname = <span class="string">r&#x27;stu_socre.txt&#x27;</span>,delimiter=<span class="string">&#x27;\t&#x27;</span>,skip_header=<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 查看数据结构</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(stu_score))</span><br><span class="line"><span class="comment"># 查看数据维数</span></span><br><span class="line"><span class="built_in">print</span>(stu_score.ndim)</span><br><span class="line"><span class="comment"># 查看数据行列数</span></span><br><span class="line"><span class="built_in">print</span>(stu_score.shape)</span><br><span class="line"><span class="comment"># 查看数组元素的数据类型</span></span><br><span class="line"><span class="built_in">print</span>(stu_score.dtype)</span><br><span class="line"><span class="comment"># 查看数组元素个数</span></span><br><span class="line"><span class="built_in">print</span>(stu_score.size)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>&lt;class &#39;numpy.ndarray&#39;&gt;
+2
+(1380, 5)
+float64
+6900
+</code></pre>
+
+        <h3 id="4-1-4-数组的形状处理"   >
+          <a href="#4-1-4-数组的形状处理" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1-4-数组的形状处理" class="headerlink" title="4.1.4 数组的形状处理"></a>4.1.4 数组的形状处理</h3>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">arr3 = np.array([[<span class="number">1</span>,<span class="number">5</span>,<span class="number">7</span>],[<span class="number">3</span>,<span class="number">6</span>,<span class="number">1</span>],[<span class="number">2</span>,<span class="number">4</span>,<span class="number">8</span>],[<span class="number">5</span>,<span class="number">8</span>,<span class="number">9</span>],[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>],[<span class="number">8</span>,<span class="number">5</span>,<span class="number">2</span>]])</span><br><span class="line"><span class="comment"># 数组的行列数</span></span><br><span class="line"><span class="built_in">print</span>(arr3.shape)</span><br><span class="line"><span class="comment"># 使用reshape方法更改数组的形状</span></span><br><span class="line"><span class="built_in">print</span>(arr3.reshape(<span class="number">2</span>,<span class="number">9</span>))</span><br><span class="line"><span class="comment"># 打印数组arr3的行列数</span></span><br><span class="line"><span class="built_in">print</span>(arr3.shape)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用resize方法更改数组的形状</span></span><br><span class="line"><span class="built_in">print</span>(arr3.resize(<span class="number">2</span>,<span class="number">9</span>))</span><br><span class="line"><span class="comment"># 打印数组arr3的行列数</span></span><br><span class="line"><span class="built_in">print</span>(arr3.shape)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>(6, 3)
+[[1 5 7 3 6 1 2 4 8]
+ [5 8 9 1 5 9 8 5 2]]
+(6, 3)
+None
+(2, 9)
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">arr4 = np.array([[<span class="number">1</span>,<span class="number">10</span>,<span class="number">100</span>],[<span class="number">2</span>,<span class="number">20</span>,<span class="number">200</span>],[<span class="number">3</span>,<span class="number">30</span>,<span class="number">300</span>]])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;原数组：\n&#x27;</span>,arr4)</span><br><span class="line"><span class="comment"># 默认排序降维</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;数组降维：\n&#x27;</span>,arr4.ravel())</span><br><span class="line"><span class="built_in">print</span>(arr4.flatten())</span><br><span class="line"><span class="built_in">print</span>(arr4.reshape(-<span class="number">1</span>))</span><br><span class="line"><span class="comment"># 改变排序模式的降维</span></span><br><span class="line"><span class="built_in">print</span>(arr4.ravel(order = <span class="string">&#x27;F&#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(arr4.flatten(order = <span class="string">&#x27;F&#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(arr4.reshape(-<span class="number">1</span>, order = <span class="string">&#x27;F&#x27;</span>))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>原数组：
+ [[  1  10 100]
+ [  2  20 200]
+ [  3  30 300]]
+数组降维：
+ [  1  10 100   2  20 200   3  30 300]
+[  1  10 100   2  20 200   3  30 300]
+[  1  10 100   2  20 200   3  30 300]
+[  1   2   3  10  20  30 100 200 300]
+[  1   2   3  10  20  30 100 200 300]
+[  1   2   3  10  20  30 100 200 300]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 更改预览值</span></span><br><span class="line">arr4.flatten()[<span class="number">0</span>] = <span class="number">2000</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;flatten方法：\n&#x27;</span>,arr4)</span><br><span class="line">arr4.ravel()[<span class="number">1</span>] = <span class="number">100</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;ravel方法：\n&#x27;</span>,arr4)</span><br><span class="line">arr4.reshape(-<span class="number">1</span>)[<span class="number">2</span>] = <span class="number">3000</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;reshape方法：\n&#x27;</span>,arr4)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>flatten方法：
+ [[   1  100 3000]
+ [   2   20  200]
+ [   3   30  300]]
+ravel方法：
+ [[   1  100 3000]
+ [   2   20  200]
+ [   3   30  300]]
+reshape方法：
+ [[  1 100 300]
+ [  2  20 200]
+ [  3  30 300]]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr5 = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;vstack纵向合并数组：\n&#x27;</span>,np.vstack([arr4,arr5]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;row_stack纵向合并数组：\n&#x27;</span>,np.row_stack([arr4,arr5]))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>vstack纵向合并数组：
+ [[  1 100 300]
+ [  2  20 200]
+ [  3  30 300]
+ [  1   2   3]]
+row_stack纵向合并数组：
+ [[  1 100 300]
+ [  2  20 200]
+ [  3  30 300]
+ [  1   2   3]]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr6 = np.array([[<span class="number">5</span>],[<span class="number">15</span>],[<span class="number">25</span>]])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hstack横向合并数组：\n&#x27;</span>,np.hstack([arr4,arr6]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;column_stack横向合并数组：\n&#x27;</span>,np.column_stack([arr4,arr6]))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>hstack横向合并数组：
+ [[  1 100 300   5]
+ [  2  20 200  15]
+ [  3  30 300  25]]
+column_stack横向合并数组：
+ [[  1 100 300   5]
+ [  2  20 200  15]
+ [  3  30 300  25]]
+</code></pre>
+
+        <h2 id="4-2-数组的基本运算符"   >
+          <a href="#4-2-数组的基本运算符" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-2-数组的基本运算符" class="headerlink" title="4.2 数组的基本运算符"></a>4.2 数组的基本运算符</h2>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(arr4)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;垂直方向计算数组的和：\n&#x27;</span>,np.<span class="built_in">sum</span>(arr4,axis = <span class="number">0</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;水平方向计算数组的和：\n&#x27;</span>,np.<span class="built_in">sum</span>(arr4, axis = <span class="number">1</span>))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>[[  1 100 300]
+ [  2  20 200]
+ [  3  30 300]]
+垂直方向计算数组的和：
+ [  6 150 800]
+水平方向计算数组的和：
+ [401 222 333]
+</code></pre>
+
+        <h3 id="4-2-1-四则运算"   >
+          <a href="#4-2-1-四则运算" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-2-1-四则运算" class="headerlink" title="4.2.1 四则运算"></a>4.2.1 四则运算</h3>
+      <p>四则运算中的符号分别是“+-*/”，对应的numpy模块函数分别是 np.add、np. subtract、np.multiply和np.divide</p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加法运算</span></span><br><span class="line">math = np.array([<span class="number">98</span>,<span class="number">83</span>,<span class="number">86</span>,<span class="number">92</span>,<span class="number">67</span>,<span class="number">82</span>])</span><br><span class="line">english = np.array([<span class="number">68</span>,<span class="number">74</span>,<span class="number">66</span>,<span class="number">82</span>,<span class="number">75</span>,<span class="number">89</span>])</span><br><span class="line">chinese = np.array([<span class="number">92</span>,<span class="number">83</span>,<span class="number">76</span>,<span class="number">85</span>,<span class="number">87</span>,<span class="number">77</span>])</span><br><span class="line">tot_symbol = math+english+chinese</span><br><span class="line">tot_fun = np.add(np.add(math,english),chinese)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;符号加法：\n&#x27;</span>,tot_symbol)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;函数加法：\n&#x27;</span>,tot_fun)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 除法运算</span></span><br><span class="line">height = np.array([<span class="number">165</span>,<span class="number">177</span>,<span class="number">158</span>,<span class="number">169</span>,<span class="number">173</span>])</span><br><span class="line">weight = np.array([<span class="number">62</span>,<span class="number">73</span>,<span class="number">59</span>,<span class="number">72</span>,<span class="number">80</span>])</span><br><span class="line">BMI_symbol = weight/(height/<span class="number">100</span>)**<span class="number">2</span></span><br><span class="line">BMI_fun = np.divide(weight,np.divide(height,<span class="number">100</span>)**<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;符号除法：\n&#x27;</span>,BMI_symbol)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;函数除法：\n&#x27;</span>,BMI_fun)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>符号加法：
+ [258 240 228 259 229 248]
+函数加法：
+ [258 240 228 259 229 248]
+符号除法：
+ [22.77318641 23.30109483 23.63403301 25.20920136 26.7299275 ]
+函数除法：
+ [22.77318641 23.30109483 23.63403301 25.20920136 26.7299275 ]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">arr7 = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">10</span>],[<span class="number">10</span>,<span class="number">8</span>,<span class="number">3</span>],[<span class="number">7</span>,<span class="number">6</span>,<span class="number">5</span>]])</span><br><span class="line">arr8 = np.array([[<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>],[<span class="number">4</span>,<span class="number">4</span>,<span class="number">4</span>]])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;数组arr7：\n&#x27;</span>,arr7)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;数组arr8：\n&#x27;</span>,arr8)</span><br><span class="line"><span class="comment"># 求余数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;计算余数：\n&#x27;</span>,arr7 % arr8)</span><br><span class="line"><span class="comment"># 求整除</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;计算整除：\n&#x27;</span>,arr7 // arr8)</span><br><span class="line"><span class="comment"># 求指数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;计算指数：\n&#x27;</span>,arr7 ** arr8)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>数组arr7：
+ [[ 1  2 10]
+ [10  8  3]
+ [ 7  6  5]]
+数组arr8：
+ [[2 2 2]
+ [3 3 3]
+ [4 4 4]]
+计算余数：
+ [[1 0 0]
+ [1 2 0]
+ [3 2 1]]
+计算整除：
+ [[0 1 5]
+ [3 2 1]
+ [1 1 1]]
+计算指数：
+ [[   1    4  100]
+ [1000  512   27]
+ [2401 1296  625]]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 整除部分</span></span><br><span class="line"><span class="built_in">print</span>(np.modf(arr7/arr8))</span><br><span class="line">np.modf(arr7/arr8)[<span class="number">1</span>]</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<pre><code>(array([[0.5       , 0.        , 0.        ],
+       [0.33333333, 0.66666667, 0.        ],
+       [0.75      , 0.5       , 0.25      ]]), array([[0., 1., 5.],
+       [3., 2., 1.],
+       [1., 1., 1.]]))
+
+
+
+
+
+array([[0., 1., 5.],
+       [3., 2., 1.],
+       [1., 1., 1.]])
+</code></pre>
+
+        <h3 id="4-2-2-比较运算"   >
+          <a href="#4-2-2-比较运算" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-2-2-比较运算" class="headerlink" title="4.2.2 比较运算"></a>4.2.2 比较运算</h3>
+      <p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322195103.jpeg"></p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 取子集</span></span><br><span class="line"><span class="comment"># 从arr7中取出arr7大于arr8的所有元素</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;arr7:\n&#x27;</span>,arr7)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;arr8:\n&#x27;</span>,arr8)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;满足条件的二维数组元素获取：\n&#x27;</span>,arr7[arr7&gt;arr8])</span><br><span class="line"><span class="comment"># 从arr9中取出大于10的元素</span></span><br><span class="line">arr9 = np.array([<span class="number">3</span>,<span class="number">10</span>,<span class="number">23</span>,<span class="number">7</span>,<span class="number">16</span>,<span class="number">9</span>,<span class="number">17</span>,<span class="number">22</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;满足条件的一维数组元素获取：\n&#x27;</span>,arr9[arr9&gt;<span class="number">10</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断操作</span></span><br><span class="line"><span class="comment"># 将arr7中大于7的元素改成5，其余的不变</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;二维数组的条件操作：\n&#x27;</span>,np.where(arr7&gt;<span class="number">7</span>,<span class="number">5</span>,arr7))</span><br><span class="line"><span class="comment"># 将arr9中大于10 的元素改为1，否则改为0</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;一维数组的条件操作：\n&#x27;</span>,np.where(arr9&gt;<span class="number">10</span>,<span class="number">1</span>,<span class="number">0</span>))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>arr7:
+ [[ 1  2 10]
+ [10  8  3]
+ [ 7  6  5]]
+arr8:
+ [[2 2 2]
+ [3 3 3]
+ [4 4 4]]
+满足条件的二维数组元素获取：
+ [10 10  8  7  6  5]
+满足条件的一维数组元素获取：
+ [23 16 17 22 15]
+二维数组的条件操作：
+ [[1 2 5]
+ [5 5 3]
+ [7 6 5]]
+一维数组的条件操作：
+ [0 0 1 0 1 0 1 1 0 0 1]
+</code></pre>
+
+        <h3 id="4-2-3-广播运算"   >
+          <a href="#4-2-3-广播运算" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-2-3-广播运算" class="headerlink" title="4.2.3 广播运算"></a>4.2.3 广播运算</h3>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 各输入数组维度一致，对应维度值相等</span></span><br><span class="line">arr10 = np.arange(<span class="number">12</span>).reshape(<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line">arr11 = np.arange(<span class="number">101</span>,<span class="number">113</span>).reshape(<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;3×4的二维矩阵运算：\n&#x27;</span>,arr10 + arr11)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 各输入数组维度不一致，对应维度值相等</span></span><br><span class="line">arr12 = np.arange(<span class="number">60</span>).reshape(<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>)</span><br><span class="line">arr10 = np.arange(<span class="number">12</span>).reshape(<span class="number">4</span>,<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(arr12)</span><br><span class="line"><span class="built_in">print</span>(arr10)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;维数不一致，但末尾的维度值一致：\n&#x27;</span>,arr12 + arr10)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 各输入数组维度不一致，对应维度值不相等，但其中有一个为1</span></span><br><span class="line">arr12 = np.arange(<span class="number">60</span>).reshape(<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>)</span><br><span class="line">arr13 = np.arange(<span class="number">4</span>).reshape(<span class="number">4</span>,<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(arr12)</span><br><span class="line"><span class="built_in">print</span>(arr13)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;维数不一致，维度值也不一致，但维度值至少一个为1：\n&#x27;</span>,arr12 + arr13)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加1补齐</span></span><br><span class="line">arr14 = np.array([<span class="number">5</span>,<span class="number">15</span>,<span class="number">25</span>])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;arr14的维度自动补齐为(1,3)：\n&#x27;</span>,arr10 + arr14)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>3×4的二维矩阵运算：
+ [[101 103 105 107]
+ [109 111 113 115]
+ [117 119 121 123]]
+[[[ 0  1  2]
+  [ 3  4  5]
+  [ 6  7  8]
+  [ 9 10 11]]
+
+ [[12 13 14]
+  [15 16 17]
+  [18 19 20]
+  [21 22 23]]
+
+ [[24 25 26]
+  [27 28 29]
+  [30 31 32]
+  [33 34 35]]
+
+ [[36 37 38]
+  [39 40 41]
+  [42 43 44]
+  [45 46 47]]
+
+ [[48 49 50]
+  [51 52 53]
+  [54 55 56]
+  [57 58 59]]]
+[[ 0  1  2]
+ [ 3  4  5]
+ [ 6  7  8]
+ [ 9 10 11]]
+维数不一致，但末尾的维度值一致：
+ [[[ 0  2  4]
+  [ 6  8 10]
+  [12 14 16]
+  [18 20 22]]
+
+ [[12 14 16]
+  [18 20 22]
+  [24 26 28]
+  [30 32 34]]
+
+ [[24 26 28]
+  [30 32 34]
+  [36 38 40]
+  [42 44 46]]
+
+ [[36 38 40]
+  [42 44 46]
+  [48 50 52]
+  [54 56 58]]
+
+ [[48 50 52]
+  [54 56 58]
+  [60 62 64]
+  [66 68 70]]]
+[[[ 0  1  2]
+  [ 3  4  5]
+  [ 6  7  8]
+  [ 9 10 11]]
+
+ [[12 13 14]
+  [15 16 17]
+  [18 19 20]
+  [21 22 23]]
+
+ [[24 25 26]
+  [27 28 29]
+  [30 31 32]
+  [33 34 35]]
+
+ [[36 37 38]
+  [39 40 41]
+  [42 43 44]
+  [45 46 47]]
+
+ [[48 49 50]
+  [51 52 53]
+  [54 55 56]
+  [57 58 59]]]
+[[0]
+ [1]
+ [2]
+ [3]]
+维数不一致，维度值也不一致，但维度值至少一个为1：
+ [[[ 0  1  2]
+  [ 4  5  6]
+  [ 8  9 10]
+  [12 13 14]]
+
+ [[12 13 14]
+  [16 17 18]
+  [20 21 22]
+  [24 25 26]]
+
+ [[24 25 26]
+  [28 29 30]
+  [32 33 34]
+  [36 37 38]]
+
+ [[36 37 38]
+  [40 41 42]
+  [44 45 46]
+  [48 49 50]]
+
+ [[48 49 50]
+  [52 53 54]
+  [56 57 58]
+  [60 61 62]]]
+arr14的维度自动补齐为(1,3)：
+ [[ 5 16 27]
+ [ 8 19 30]
+ [11 22 33]
+ [14 25 36]]
+</code></pre>
+
+        <h2 id="4-3-常用的数学和统计函数"   >
+          <a href="#4-3-常用的数学和统计函数" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-3-常用的数学和统计函数" class="headerlink" title="4.3 常用的数学和统计函数"></a>4.3 常用的数学和统计函数</h2>
+      <p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322200132.jpg"></p>
+
+        <h2 id="4-4-线性代数的相关计算"   >
+          <a href="#4-4-线性代数的相关计算" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-线性代数的相关计算" class="headerlink" title="4.4 线性代数的相关计算"></a>4.4 线性代数的相关计算</h2>
+      
+        <h3 id="4-4-1-矩阵乘法"   >
+          <a href="#4-4-1-矩阵乘法" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-1-矩阵乘法" class="headerlink" title="4.4.1 矩阵乘法"></a>4.4.1 矩阵乘法</h3>
+      <p>点积函数dot，使用在两个一维数组中，实际上是计算两个向量的 乘积，返回一个标量；使用在两个二维数组中，即矩阵的乘法，矩阵乘 法要求第一个矩阵的列数等于第二个矩阵的行数，否则会报错。</p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一维数组的点积</span></span><br><span class="line">vector_dot = np.dot(np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]), np.array([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;一维数组的点积：\n&#x27;</span>,vector_dot)</span><br><span class="line"><span class="comment"># 二维数组的乘法</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;两个二维数组：&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(arr10)</span><br><span class="line"><span class="built_in">print</span>(arr11)</span><br><span class="line">arr2d = np.dot(arr10,arr11)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;二维数组的乘法：\n&#x27;</span>,arr2d)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>一维数组的点积：
+ 32
+两个二维数组：
+[[ 0  1  2]
+ [ 3  4  5]
+ [ 6  7  8]
+ [ 9 10 11]]
+[[101 102 103 104]
+ [105 106 107 108]
+ [109 110 111 112]]
+二维数组的乘法：
+ [[ 323  326  329  332]
+ [1268 1280 1292 1304]
+ [2213 2234 2255 2276]
+ [3158 3188 3218 3248]]
+</code></pre>
+
+        <h3 id="4-4-2-diag函数的使用"   >
+          <a href="#4-4-2-diag函数的使用" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-2-diag函数的使用" class="headerlink" title="4.4.2 diag函数的使用"></a>4.4.2 diag函数的使用</h3>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># diag的使用如果给diag函数传入的是二维数组，则返回由主对 角元素构成的一维数组；</span></span><br><span class="line"><span class="comment"># 如果向diag函数传入一个一维数组，则返回方 阵，且方阵的主对角线就是一维数组的值，方阵的非主对角元素均为 0。</span></span><br><span class="line">arr15 = np.arange(<span class="number">16</span>).reshape(<span class="number">4</span>,-<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;4×4的矩阵：\n&#x27;</span>,arr15)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;取出矩阵的主对角线元素：\n&#x27;</span>,np.diag(arr15))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;由一维数组构造的方阵：\n&#x27;</span>,np.diag(np.array([<span class="number">5</span>,<span class="number">15</span>,<span class="number">25</span>])))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>4×4的矩阵：
+ [[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]
+ [12 13 14 15]]
+取出矩阵的主对角线元素：
+ [ 0  5 10 15]
+由一维数组构造的方阵：
+ [[ 5  0  0]
+ [ 0 15  0]
+ [ 0  0 25]]
+</code></pre>
+
+        <h3 id="4-4-3-特征根与特征向量"   >
+          <a href="#4-4-3-特征根与特征向量" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-3-特征根与特征向量" class="headerlink" title="4.4.3 特征根与特征向量"></a>4.4.3 特征根与特征向量</h3>
+      <p>假设A为n阶方阵，如果存在数λ和非零向量，使得 Ax=λx（x≠0），则称λ为A的特征根，x为特征根λ对应的特征向量。如 果需要计算方阵的特征根和特征向量，可以使用子模块linalg中的eig函数</p>
+<p>特征根和特征向量的结果存储在元组中，元组的第 一个元素就是特征根，每个特征根对应的特征向量存储在元组的第二个 元素中。</p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 计算方阵的特征向量和特征根</span></span><br><span class="line">arr16 = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>],[<span class="number">3</span>,<span class="number">6</span>,<span class="number">8</span>],[<span class="number">4</span>,<span class="number">7</span>,<span class="number">9</span>]])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;计算3×3方阵的特征根和特征向量：\n&#x27;</span>,arr16)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;求解结果为：\n特征根: \n&#x27;</span>,np.linalg.eig(arr16)[<span class="number">0</span>])</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;特征向量: \n&#x27;</span>,np.linalg.eig(arr16)[<span class="number">1</span>])</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>计算3×3方阵的特征根和特征向量：
+ [[1 2 5]
+ [3 6 8]
+ [4 7 9]]
+求解结果为：
+特征根: 
+ [16.75112093 -1.12317544  0.37205451]
+特征向量: 
+ [[-0.30758888 -0.90292521  0.76324346]
+ [-0.62178217 -0.09138877 -0.62723398]
+ [-0.72026108  0.41996923  0.15503853]]
+</code></pre>
+
+        <h3 id="4-4-4-多元线性回归模型的解"   >
+          <a href="#4-4-4-多元线性回归模型的解" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-4-多元线性回归模型的解" class="headerlink" title="4.4.4 多元线性回归模型的解"></a>4.4.4 多元线性回归模型的解</h3>
+      <p>多元线性回归模型一般用来预测连续的因变量，如根据天气状况预 测游客数量、根据网站的活动页面预测支付转化率、根据城市人口的收 入、教育水平、寿命等预测犯罪率等。该模型可以写成Y=Xβ+ε，其中Y 为因变量，X为自变量，ε为误差项。要想根据已知的X来预测Y的话，必 须得知道偏回归系数β的值。对于熟悉多元线性回归模型的读者来说， 一定知道偏回归系数的求解方程，即β=(X’X)-1X’Y)。</p>
+<p>X数组中，第一列全都是1，代表了这是线性回归模型 中的截距项，剩下的三列代表自变量，根据β的求解公式，得到模型的 偏回归系数，从而可以将多元线性回归模型表示为 Y=1.781+0.247x1+0.158x2+0.133x3</p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 计算偏回归系数</span></span><br><span class="line">X = np.array([[<span class="number">1</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">7</span>,<span class="number">6</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">6</span>],[<span class="number">1</span>,<span class="number">3</span>,<span class="number">8</span>,<span class="number">7</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">8</span>],[<span class="number">1</span>,<span class="number">3</span>,<span class="number">7</span>,<span class="number">5</span>],[<span class="number">1</span>,<span class="number">6</span>,<span class="number">10</span>,<span class="number">12</span>],[<span class="number">1</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">7</span>],[<span class="number">1</span>,<span class="number">6</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">1</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">8</span>]])</span><br><span class="line">Y = np.array([<span class="number">3.2</span>,<span class="number">3.8</span>,<span class="number">3.7</span>,<span class="number">4.3</span>,<span class="number">4.4</span>,<span class="number">5.2</span>,<span class="number">6.7</span>,<span class="number">4.8</span>,<span class="number">4.2</span>,<span class="number">5.1</span>])</span><br><span class="line"><span class="built_in">print</span>(X.shape,Y.shape)</span><br><span class="line"><span class="built_in">print</span>(X,<span class="string">&#x27;\n&#x27;</span>,Y)</span><br><span class="line">X_trans_X_inverse = np.linalg.inv(np.dot(np.transpose(X),X))</span><br><span class="line">beta = np.dot(np.dot(X_trans_X_inverse,np.transpose(X)),Y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;偏回归系数为：\n&#x27;</span>,beta)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>(10, 4) (10,)
+[[ 1  1  4  3]
+ [ 1  2  7  6]
+ [ 1  2  6  6]
+ [ 1  3  8  7]
+ [ 1  2  5  8]
+ [ 1  3  7  5]
+ [ 1  6 10 12]
+ [ 1  5  7  7]
+ [ 1  6  3  4]
+ [ 1  5  7  8]] 
+ [3.2 3.8 3.7 4.3 4.4 5.2 6.7 4.8 4.2 5.1]
+偏回归系数为：
+ [1.78052227 0.24720413 0.15841148 0.13339845]
+</code></pre>
+
+        <h3 id="4-4-5-多元一次方程组的求解"   >
+          <a href="#4-4-5-多元一次方程组的求解" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-5-多元一次方程组的求解" class="headerlink" title="4.4.5 多元一次方程组的求解"></a>4.4.5 多元一次方程组的求解</h3>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 多元线性方程组</span></span><br><span class="line">A = np.array([[<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>],[<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]])</span><br><span class="line">b = np.array([<span class="number">39</span>,<span class="number">34</span>,<span class="number">26</span>])</span><br><span class="line">X = np.linalg.solve(A,b)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;三元一次方程组的解：\n&#x27;</span>,X)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>三元一次方程组的解：
+ [9.25 4.25 2.75]
+</code></pre>
+
+        <h3 id="4-4-6-范数的计算"   >
+          <a href="#4-4-6-范数的计算" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-6-范数的计算" class="headerlink" title="4.4.6 范数的计算"></a>4.4.6 范数的计算</h3>
+      <p>范数常常用来度量某个向量空间（或矩阵）中的每个向量的长度或 大小，它具有三方面的约束条件，分别是非负性、齐次性和三角不等 性。最常用的范数就是p范数，其公式可以表示成ǁxǁp=(|x1|p+|x2|p+… +|xn|p)1/p。关于范数的计算，可以使用linalg子模块中的norm函数，向量的无穷范数是指从向量中挑选出绝对值最大的<br>元素</p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 范数的计算</span></span><br><span class="line">arr17 = np.array([<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">9</span>,<span class="number">10</span>,-<span class="number">12</span>])</span><br><span class="line"><span class="comment"># 一范数</span></span><br><span class="line">res1 = np.linalg.norm(arr17, <span class="built_in">ord</span> = <span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;向量的一范数：\n&#x27;</span>,res1)</span><br><span class="line"><span class="comment"># 二范数</span></span><br><span class="line">res2 = np.linalg.norm(arr17, <span class="built_in">ord</span> = <span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;向量的二范数：\n&#x27;</span>,res2)</span><br><span class="line"><span class="comment"># 无穷范数</span></span><br><span class="line">res3 = np.linalg.norm(arr17, <span class="built_in">ord</span> = np.inf)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;向量的无穷范数：\n&#x27;</span>,res3)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>向量的一范数：
+ 47.0
+向量的二范数：
+ 20.223748416156685
+向量的无穷范数：
+ 12.0
+</code></pre>
+
+        <h2 id="4-5-伪随机数的生成"   >
+          <a href="#4-5-伪随机数的生成" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-5-伪随机数的生成" class="headerlink" title="4.5 伪随机数的生成"></a>4.5 伪随机数的生成</h2>
+      <p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322201901.jpg"></p>
+<p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322202509.jpg"></p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(np.random.beta(<span class="number">1</span>,<span class="number">10</span>,<span class="number">10</span>))</span><br><span class="line"><span class="built_in">print</span>(np.random.normal(<span class="number">10</span>,<span class="number">0.1</span>,<span class="number">10</span>))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>[10.16271816 10.00301325  9.98543987 10.02275304 10.10488564 10.17739387
+ 10.11168868 10.10812513 10.15094158  9.95013062]
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> stats</span><br><span class="line"><span class="comment"># 生成各种正态分布随机数</span></span><br><span class="line">np.random.seed(<span class="number">1234</span>)</span><br><span class="line">rn1 = np.random.normal(loc = <span class="number">0</span>, scale = <span class="number">1</span>, size = <span class="number">1000</span>)</span><br><span class="line">rn2 = np.random.normal(loc = <span class="number">0</span>, scale = <span class="number">2</span>, size = <span class="number">1000</span>)</span><br><span class="line">rn3 = np.random.normal(loc = <span class="number">2</span>, scale = <span class="number">3</span>, size = <span class="number">1000</span>)</span><br><span class="line">rn4 = np.random.normal(loc = <span class="number">5</span>, scale = <span class="number">3</span>, size = <span class="number">1000</span>)</span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line">plt.style.use(<span class="string">&#x27;ggplot&#x27;</span>)</span><br><span class="line">sns.distplot(rn1, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.norm, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;black&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;u=0,s=1&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;-&#x27;</span>&#125;)</span><br><span class="line">sns.distplot(rn2, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.norm, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;u=0,s=2&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;--&#x27;</span>&#125;)</span><br><span class="line">sns.distplot(rn3, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.norm, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;blue&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;u=2,s=3&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;:&#x27;</span>&#125;)</span><br><span class="line">sns.distplot(rn4, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.norm, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;purple&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;u=5,s=3&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;-.&#x27;</span>&#125;)</span><br><span class="line"><span class="comment"># 呈现图例</span></span><br><span class="line">plt.legend()</span><br><span class="line"><span class="comment"># 呈现图形</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></div></figure>
+
+
+
+
+<p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322203141.png" alt="png"></p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成各种指数分布随机数</span></span><br><span class="line">np.random.seed(<span class="number">1234</span>)</span><br><span class="line">re1 = np.random.exponential(scale = <span class="number">0.5</span>, size = <span class="number">1000</span>)</span><br><span class="line">re2 = np.random.exponential(scale = <span class="number">1</span>, size = <span class="number">1000</span>)</span><br><span class="line">re3 = np.random.exponential(scale = <span class="number">1.5</span>, size = <span class="number">1000</span>)</span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line">sns.distplot(re1, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.expon, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;black&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;lambda=0.5&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;-&#x27;</span>&#125;)</span><br><span class="line">sns.distplot(re2, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.expon, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;lambda=1&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;--&#x27;</span>&#125;)</span><br><span class="line">sns.distplot(re3, hist = <span class="literal">False</span>, kde = <span class="literal">False</span>, fit = stats.expon, </span><br><span class="line">             fit_kws = &#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;blue&#x27;</span>,<span class="string">&#x27;label&#x27;</span>:<span class="string">&#x27;lambda=1.5&#x27;</span>,<span class="string">&#x27;linestyle&#x27;</span>:<span class="string">&#x27;:&#x27;</span>&#125;)</span><br><span class="line"><span class="comment"># 呈现图例</span></span><br><span class="line">plt.legend()</span><br><span class="line"><span class="comment"># 呈现图形</span></span><br><span class="line">plt.show()</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+
+<p><img src="https://gitee.com/junhaodada/picgoimage/raw/master/2022/20220322203147.png" alt="png"></p>
+<hr>
+</div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://junhaodada.github.io">JunHao</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://junhaodada.github.io/2022/03/22/AI/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/">https://junhaodada.github.io/2022/03/22/AI/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E6%8C%96%E6%8E%98/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7--Numpy/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Python%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94Numpy"><span class="toc-number">1.</span> <span class="toc-text">
+          Python数值计算工具——Numpy</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.</span> <span class="toc-text">
+          4.1 数组的创建与操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1-%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.1.</span> <span class="toc-text">
+          4.1.1 数组的创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2-%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E8%8E%B7%E5%8F%96"><span class="toc-number">1.1.2.</span> <span class="toc-text">
+          4.1.2 数组元素的获取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-3-%E6%95%B0%E7%BB%84%E7%9A%84%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.3.</span> <span class="toc-text">
+          4.1.3 数组的常用属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-4-%E6%95%B0%E7%BB%84%E7%9A%84%E5%BD%A2%E7%8A%B6%E5%A4%84%E7%90%86"><span class="toc-number">1.1.4.</span> <span class="toc-text">
+          4.1.4 数组的形状处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.2.</span> <span class="toc-text">
+          4.2 数组的基本运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="toc-number">1.2.1.</span> <span class="toc-text">
+          4.2.1 四则运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-2-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97"><span class="toc-number">1.2.2.</span> <span class="toc-text">
+          4.2.2 比较运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-3-%E5%B9%BF%E6%92%AD%E8%BF%90%E7%AE%97"><span class="toc-number">1.2.3.</span> <span class="toc-text">
+          4.2.3 广播运算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%B0%E5%AD%A6%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.</span> <span class="toc-text">
+          4.3 常用的数学和统计函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%A1%E7%AE%97"><span class="toc-number">1.4.</span> <span class="toc-text">
+          4.4 线性代数的相关计算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-1-%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95"><span class="toc-number">1.4.1.</span> <span class="toc-text">
+          4.4.1 矩阵乘法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-2-diag%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">
+          4.4.2 diag函数的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-3-%E7%89%B9%E5%BE%81%E6%A0%B9%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F"><span class="toc-number">1.4.3.</span> <span class="toc-text">
+          4.4.3 特征根与特征向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-4-%E5%A4%9A%E5%85%83%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A7%A3"><span class="toc-number">1.4.4.</span> <span class="toc-text">
+          4.4.4 多元线性回归模型的解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-5-%E5%A4%9A%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E6%B1%82%E8%A7%A3"><span class="toc-number">1.4.5.</span> <span class="toc-text">
+          4.4.5 多元一次方程组的求解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-6-%E8%8C%83%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">1.4.6.</span> <span class="toc-text">
+          4.4.6 范数的计算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%9A%84%E7%94%9F%E6%88%90"><span class="toc-number">1.5.</span> <span class="toc-text">
+          4.5 伪随机数的生成</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/photo.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">JunHaodada</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/Junhaodada" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="mailto:1768794461@qq.com" target="_blank" rel="noopener" data-popover="social.QQmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">email</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">27</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">18</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__devider"></span><span>JunHao</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="205,133,63" opacity="0.8" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
