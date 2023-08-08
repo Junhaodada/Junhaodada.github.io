@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Junhaodada&#39;s Blog</title>
+    <link>https://Junhaodada.github.io/tags/</link>
+    <description>Recent content in Tags on Junhaodada&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
+    <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
+    <copyright>2023 Junhaodada All rights reserved</copyright>
+    <lastBuildDate>Tue, 08 Aug 2023 20:23:39 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

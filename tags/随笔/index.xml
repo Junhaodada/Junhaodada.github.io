@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on Junhaodada&#39;s Blog</title>
+    <link>https://Junhaodada.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on Junhaodada&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
+    <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
+    <copyright>2023 Junhaodada All rights reserved</copyright>
+    <lastBuildDate>Tue, 08 Aug 2023 20:23:39 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇博客</title>
+      <link>https://Junhaodada.github.io/blog/first-blog/</link>
+      <pubDate>Tue, 08 Aug 2023 20:23:39 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/first-blog/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;一个真正意义的学术博客!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天我终于下定决心，搭建了一个真正简约美观的学术博客。在一番搜索之后，我终于在若干主题中选定了&lt;code&gt;Ladder&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
