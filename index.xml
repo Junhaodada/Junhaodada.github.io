@@ -9,7 +9,494 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Tue, 08 Aug 2023 20:23:39 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Aug 2023 18:59:33 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何实现阶层跨越</title>
+      <link>https://Junhaodada.github.io/blog/essay/how-to-make-the-class-leap/</link>
+      <pubDate>Wed, 09 Aug 2023 18:59:33 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/essay/how-to-make-the-class-leap/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;社会资源永远是有限的，好东西要靠抢。只有弱者才会坐等分配。——（美）利弗.莫尔&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;阶层体系&#34;&gt;阶层体系&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/69941ac7-8b62-4a5f-8788-158d4a4c6536.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/6b3f7093-a56c-4685-bf12-87a4b7d9285e.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;影响阶层形成的主要因素&#34;&gt;影响阶层形成的主要因素&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;社会制度和社会文化&lt;/li&gt;
+&lt;li&gt;社会分配规则&lt;/li&gt;
+&lt;li&gt;社会流动机制&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;决定个人社会阶层的核心因素&#34;&gt;决定个人社会阶层的核心因素&lt;/h2&gt;
+&lt;h3 id=&#34;获得的社会资源价值&#34;&gt;获得的社会资源价值&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;政治资源&lt;/li&gt;
+&lt;li&gt;经济资源&lt;/li&gt;
+&lt;li&gt;文化技术资源&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;向上流动的概率&#34;&gt;向上流动的概率&lt;/h3&gt;
+&lt;p&gt;文化冲突与社会流动&lt;/p&gt;
+&lt;h3 id=&#34;放大阶层跨越概率的主要方法&#34;&gt;放大阶层跨越概率的主要方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;避开先富为主的环境&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从优势的社会资源去突破&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;政治资源&lt;/li&gt;
+&lt;li&gt;经济资源&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文化技术资源&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;选择更容易向上流动的领域&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;拥抱冲突与变化，进入新领域&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;参考资料&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Uj411Z7Cz&#34;&gt;纯干货：如何通过个人努力进入到高级阶层？&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>迁移学习入门</title>
+      <link>https://Junhaodada.github.io/blog/share/getting-started-with-transfer-learning/</link>
+      <pubDate>Wed, 09 Aug 2023 18:57:45 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/share/getting-started-with-transfer-learning/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;迁移学习入门教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/4943e34a-d12a-47c3-b935-efd47c89b42c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在2016年的神经信息处理系统大会(Conference and Workshop on Neural Information Processing Systems，NIPS)上，前百度首席科学家、斯坦福大学教授吴恩达表示：“在监督学习之后，&lt;strong&gt;迁移学习&lt;/strong&gt;将引领下一波机器学习技术商业化浪潮。”&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;我们首先来看一下迁移学习的定义：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/9b076d1b-9258-4101-9e2e-4a3309cf9086.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;直观上理解，迁移学习就是使用已有的知识来学习新的知识，即“举一反三”的能力。比如使用猫狗图像分类的网络经过少量的训练便能够去分辨老虎和狮子
+。&lt;/p&gt;
+&lt;p&gt;迁移学习可以将在一个领域训练的机器学习模型应用到另一个领域，在某种程度上提高了训练模型的利用率，解决数据缺失的问题（某些新兴领域可能缺乏训练数据），所以利用迁移学习，我们可以将在大数据集上训练好的大型网络迁移到小数据集上，从而只需经过少量的训练就能达到良好的效果。&lt;/p&gt;
+&lt;h2 id=&#34;监督学习vs迁移学习&#34;&gt;监督学习vs迁移学习&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;监督学习&lt;/strong&gt;要求训练集和测试集上的数据具有相同的&lt;strong&gt;分布特性&lt;/strong&gt;。（分布特性，如猫狗图片的比例）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;迁移学习&lt;/strong&gt;则不同，它允许训练集和测试集的数据有不同的分布、目标，甚至领域。因此，对比传统的机器学习可以发现，迁移学习不需要我们对每一个领域都标注大量的训练数据，这就节省了大量的人力和物力；迁移学习也不需要假定训练数据与测试数据服从相同的分布。&lt;/p&gt;
+&lt;h2 id=&#34;分类&#34;&gt;分类&lt;/h2&gt;
+&lt;p&gt;回顾上文提到的形式化定义，迁移学习包括两个部分：源域 $D_s$ 和源任务 $T_s$，目标域 $D_t$ 和目标任务 $T_t$，迁移学习的任务就是要把在源域学习到的任务迁移到目标域对应的目标任务上。&lt;/p&gt;
+&lt;p&gt;什么是域？&lt;/p&gt;
+&lt;p&gt;域 D={X,P(X)}就是数据的领域空间和数据对应的分布，在区分猫狗的例子里，X就是所有的猫和狗，P(X)就是各种猫和狗的分布。&lt;/p&gt;
+&lt;p&gt;什么是任务？&lt;/p&gt;
+&lt;p&gt;任务T包含X到Y的映射，即Y=f(X),Y={&amp;lsquo;猫&amp;rsquo;,&amp;lsquo;狗&amp;rsquo;}。&lt;/p&gt;
+&lt;p&gt;根据各要素的不同，&lt;strong&gt;迁移学习的分类&lt;/strong&gt;如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/c01e704d-1d39-4624-9fa9-ee063d8ef22b.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;应用与趋势&#34;&gt;应用与趋势&lt;/h2&gt;
+&lt;p&gt;吴恩达在2016年NIPS 会议上展示了不同类型的机器学习算法在未来商业中的应用趋势，如图所示。
+&lt;img src=&#34;https://files.mdnice.com/user/46665/9bd6018a-2110-47bf-bbf4-7ffcbd1d8368.png&#34; alt=&#34;&#34;&gt;
+&lt;strong&gt;应用案例&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;大模型得到的泛化模型，使用特定领域的数据进行训练，迁移得到垂直领域的小模型，&lt;/p&gt;
+&lt;h2 id=&#34;实现&#34;&gt;实现&lt;/h2&gt;
+&lt;p&gt;那么迁移学习如何实现呢？&lt;/p&gt;
+&lt;p&gt;在训练阶段，迁移模块的拓扑结构和所有超参数都可以保持不变，但是权重有可能使用新的数据重新训练。是否要更新这些旧模块的权重取决于我们采取的迁移学习方式，一般有两种：预训练模式和固定值模式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;预训练模式&lt;/strong&gt;：迁移过来的权重视作新网络的初始权重，但是它在训练的过程中会&lt;strong&gt;被梯度下降算法改变数值&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/9ca9f346-84c7-4dba-a184-87171bb3d202.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;固定值模式&lt;/strong&gt;：迁移过来的部分网络在结构和权重上都保持固定的数值，训练过程&lt;strong&gt;仅针对迁移模块后面的全连接网络&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/5e50f353-17da-4c5f-b954-bdc3624fbd8c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;a href=&#34;https://weread.qq.com/web/reader/b8c323d0813ab752fg0146c9&#34;&gt;https://weread.qq.com/web/reader/b8c323d0813ab752fg0146c9&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0&#34;&gt;https://zh.wikipedia.org/wiki/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>推荐一款好用的代码标记插件</title>
+      <link>https://Junhaodada.github.io/blog/share/recommend-a-good-code-markup-plugin/</link>
+      <pubDate>Wed, 09 Aug 2023 18:40:22 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/share/recommend-a-good-code-markup-plugin/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;VsCode代码标记插件——Bookmarks&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近在网上无意中看到了一款不错的VsCode代码标记插件——Bookmarks，推荐给大家。
+&lt;img src=&#34;https://files.mdnice.com/user/46665/3359410b-7d62-4dd1-be98-c6ecbd0e9a16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这款插件可以用于代码标记及标记之间的跳转，这对于编写大型项目提供了极大的便利。&lt;/p&gt;
+&lt;p&gt;首先在VsCode插件商店中搜索Bookmarks，点击安装插件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/234d7587-a3dd-4c4f-822c-d07f27e37643.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在当前工作区中按&lt;code&gt;ctrl+shift+p&lt;/code&gt;，输入&lt;code&gt;bookmarks&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/c36c7d9c-88cf-4556-a04c-2f078e9c32b0.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最后，使用这三个快捷键可以轻松地完成代码标记及标记之间的跳转：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ctrl+alt+k&lt;/code&gt;：标记/取消标记（蓝色标记图标）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl+alt+j&lt;/code&gt;：跳转到上一个标记&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl+alt+l&lt;/code&gt;：跳转到下一个标记&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://files.mdnice.com/user/46665/c53581f9-7d5f-46dd-bc37-59feb2494beb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>狙击室·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/the-kill-room/</link>
+      <pubDate>Wed, 09 Aug 2023 18:31:20 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/the-kill-room/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这是一本侦探悬疑小说，作者是&amp;quot;杰夫里.迪弗&amp;quot;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/killroom.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这是我接触的第一本悬疑小说。之前接触到悬疑类的作品，如：《隐秘的角落》、《漫长的季节》等，都是以电影的形式，叙事更加直观形象。当真正拿起一本悬疑小说阅读时，内心还是充满好奇与忐忑的，故事的内容、主人公、情节，以及每一章的分节式叙述方式，不读到最后我真的不能说我真正的了解了这个故事。我喜欢细致温和的阅读方式，对每一本优秀的作品总是充满敬意，是我的阅读原则，所以在阅读此书时会详细记录每一篇章的情节内容以及个人的内容的思考。&lt;/p&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;这是一个警督断案的故事。&lt;/p&gt;
+&lt;h2 id=&#34;第一部分-毒漆树&#34;&gt;第一部分 毒漆树&lt;/h2&gt;
+&lt;p&gt;1&lt;/p&gt;
+&lt;p&gt;罗伯特·莫里诺是一位活动家，其创办的‘本地赋权’运动团体刚在阿根廷开设首间办公室。在与记者交谈的过程中被狙击手暗中射杀。&lt;/p&gt;
+&lt;p&gt;其中罗比特对于资本主义的一段论述十分的引人深思：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为什么你既痛恨资本主义又接纳资本主义？&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;我痛恨的是资本主义被误用的乱象，尤其是x国。我把商业当作武器。只有傻子才会觉得单凭意识形态就能改革现状。想法是舵，钱才是螺旋桨。&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;他是革命家？还是发声者？&lt;/p&gt;
+&lt;p&gt;细节描写：反复提到的光点暗示了他的结局。&lt;/p&gt;
+&lt;h2 id=&#34;第二部分-序列&#34;&gt;第二部分 序列&lt;/h2&gt;
+&lt;p&gt;2&lt;/p&gt;
+&lt;p&gt;介绍了本书的主人公及其生活、工作状态。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;林肯·莱姆：残疾、协助纽约警察局探案&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;汤姆：助手&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;萨克斯：助手&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;朗·塞利托：警探，莱姆的合作者，重案组的一级警探，在第一分局上班，而且通常莱姆受雇侦办的案子都是由他负责&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3&lt;/p&gt;
+&lt;p&gt;新的角色（对比）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;比尔·迈尔斯：警察局特殊勤务部警督，成熟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;南希·洛蕾尔：助理检察官，稚嫩&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;案件描述&lt;/p&gt;
+&lt;p&gt;上周二，就是五月九日，一位美国公民在巴哈马一家高级酒店被谋杀了。当地警方已经在调查，但我有理由相信杀手是美国人，且已回国。人很可能就在纽约。&lt;/p&gt;
+&lt;p&gt;由谋杀罪到密谋策划罪，由枪手到密谋者nios局长里夫·梅茨格。&lt;/p&gt;
+&lt;p&gt;tip&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E8%B1%81%E5%85%8D%E6%9D%83/0&#34;&gt;豁免权&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E7%8A%AC%E5%84%92%E4%B8%BB%E4%B9%89/324050&#34;&gt;犬儒主义&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4&lt;/p&gt;
+&lt;p&gt;雅各布·斯万与导游之间的插曲，存在性交易。&lt;/p&gt;
+&lt;p&gt;备注：暂时还没看懂&lt;/p&gt;
+&lt;p&gt;5&lt;/p&gt;
+&lt;p&gt;交代莫里诺的生平，案件当下的审理过程，以及众人下决心要调查此案。&lt;/p&gt;
+&lt;p&gt;6&lt;/p&gt;
+&lt;p&gt;原来第4节的雅各布就是杀手，谜底解开。&lt;/p&gt;
+&lt;p&gt;7&lt;/p&gt;
+&lt;p&gt;介绍了梅茨格的生平及特征，情绪不稳定，有军方背景，擅长杀人&lt;/p&gt;
+&lt;p&gt;8&lt;/p&gt;
+&lt;p&gt;拿出暗杀令&lt;/p&gt;
+&lt;p&gt;9&lt;/p&gt;
+&lt;p&gt;梅茨格与魔法师的对话，精彩的对决。任何失误都会被对手利用。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>0.5的男人·观后感</title>
+      <link>https://Junhaodada.github.io/blog/movie/0.5-man/</link>
+      <pubDate>Wed, 09 Aug 2023 17:54:30 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/movie/0.5-man/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;0.5的男人&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://m.bilibili.com/video/BV1ip4y157DZ&#34;&gt;剧情介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;人都有想要躺平摆烂的时候，那一天到来的时候，是否会被身边的亲人、朋友所理解呢？温柔善良的人总不会太多，生活的重担、亲人的期待、内心的倔强都是压倒骆驼的最后稻草。记得当年一位哲人告诉过我要放空自己，可至今没有真正放空过，身体上的放松，心态上的放松，都不等于精神上的放空，因为牵绊太多、留恋太多，我们大多数人都做不了这0.5的男人，总是在拼尽全力做那2.0的男人。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>岛上书店·观后感</title>
+      <link>https://Junhaodada.github.io/blog/movie/the-storied-life-of-a.j.fikry/</link>
+      <pubDate>Wed, 09 Aug 2023 17:41:21 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/movie/the-storied-life-of-a.j.fikry/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;岛上书店，治愈心灵的故事&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/movie/bookstore.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A.J. Fikry&amp;rsquo;s wife has died, his bookstore is in trouble, and now his prized rare edition of Poe poems has been stolen. But when a mysterious package appears, its arrival gives him the chance to make his life over and see things anew. A NYT Bestseller.&lt;/p&gt;
+&lt;p&gt;世俗熙熙攘攘，唯有美酒与书籍能够引起人与人之间情感与心灵的共鸣，这是一个苦涩与美好并存的故事。当生活陷入困境之时，不妨拿起一本书，沉溺其中，未尝不是一种享受呢。&lt;/p&gt;
+&lt;p&gt;治愈自己的永远是内心极致的宁静。大胆追求所爱，寻找那份宁静。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>工具整理</title>
+      <link>https://Junhaodada.github.io/blog/tool-list/</link>
+      <pubDate>Wed, 09 Aug 2023 17:31:32 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/tool-list/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;常用工具整理列表集合&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;咨询&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;中文&lt;/th&gt;
+&lt;th&gt;英文&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.bilibili.com/index.html&#34;&gt;哔哩哔哩 (゜-゜)つロ 干杯~-bilibili&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.youtube.com/&#34;&gt;YouTuBe&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.zhihu.com/&#34;&gt;首页 - 知乎&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.twitter.com&#34;&gt;Twitter&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.csdn.net/?spm=1010.2135.3001.4476&#34;&gt;CSDN - 专业开发者社区&lt;/a&gt; | &lt;a href=&#34;https://juejin.cn/&#34;&gt;稀土掘金&lt;/a&gt; | &lt;a href=&#34;https://www.oschina.net/&#34;&gt;OSCHINA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://weibo.com/&#34;&gt;微博 - 随时随地发生新鲜事&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.facebook.com/&#34;&gt;facebook&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.douyin.com/&#34;&gt;抖音-记录美好生活&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.tiktok.com/foryou&#34;&gt;TikTok&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;期刊杂志&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.com/&#34;&gt;TIME | Current &amp;amp; Breaking News | National &amp;amp; World Updates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;工具箱&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tboxn.com/&#34;&gt;Tbox导航 | 只收录优质在线工具的导航网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kaifa.baidu.com/?ref=www.tboxn.com&#34;&gt;开发者搜索-Beta-让技术搜索更简单高效&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.githubs.cn/&#34;&gt;GitHub中文社区 | GitHub中文网&lt;/a&gt; |  &lt;a href=&#34;https://github.com/GrowingGit/GitHub-Chinese-Top-Charts&#34;&gt;GitHub中文排行榜&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trending&#34;&gt;Trending repositories on GitHub today&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hellogithub.com/&#34;&gt;hellogithub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;chatgpt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LiLittleCat/awesome-free-chatgpt&#34;&gt;免费的 ChatGPT 镜像网站列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/fb466aab-f339-4cbd-8e04-b556a3a1b6e8&#34;&gt;Claude2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mingw64&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mingw-w64.org/&#34;&gt;mingw-w64官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/djzhao627/article/details/122999240&#34;&gt;国内开源镜像网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/289073950/answer/2677581534&#34;&gt;windows安装gcc？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/jiemashizhen/article/details/127582991&#34;&gt;Ubuntu(22.04)：安装SSH&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;学术&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ccf.org.cn/Academic_Evaluation/By_category/&#34;&gt;中国计算机学会推荐国际学术会议和期刊目录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scopus.com/freelookup/form/author.uri&#34;&gt;scopus-author检索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yarpiz.com/&#34;&gt;Yarpiz-学术源代码和教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PKUFlyingPig/cs-self-learning&#34;&gt;CS自学指南&lt;/a&gt; | &lt;a href=&#34;https://cloud-atlas.readthedocs.io/zh_CN/latest/index.html&#34;&gt;云图 – 云计算图志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dictionary.cambridge.org/zhs/&#34;&gt;剑桥翻译&lt;/a&gt; | &lt;a href=&#34;https://fanyi.sogou.com/&#34;&gt;搜狗翻译&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://v2rayse.com/&#34;&gt;科学上网工具箱&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=pTlso8m_iRk&#34;&gt;Linux科学上网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/480198804&#34;&gt;如何申请软著&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tool.lu/ip/&#34;&gt;IP地址查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学校政策
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://graduate.bjut.edu.cn/info/1110/1722.htm&#34;&gt;关于修订及印制2023版研究生培养方案的通知-北京工业大学研究生院&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yanzhao.bjut.edu.cn/info/1020/5730.htm&#34;&gt;北京工业大学2023年硕士学位研究生招生章程-北京工业大学研究生招生网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bjut.edu.cn/info/1102/1149.htm&#34;&gt;研究生奖助学金-北京工业大学|Beijing University of Technology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xxgk.bjut.edu.cn/xxgkqd/xsglfwxx/jxjsq.htm&#34;&gt;奖学金申请-北京工业大学信息公开网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;优化器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cplex&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://ibm.ent.box.com/s/wjuh81fmorssmwwoe4eg2spfl9xrakvn&#34;&gt;cplex安装包&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://ibmdecisionoptimization.github.io/docplex-doc/mp/index.html&#34;&gt;docplex文档&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://brucehan.top/2020/02/02/docplex/&#34;&gt;教程1&lt;/a&gt; | &lt;a href=&#34;https://zhuanlan.zhihu.com/p/124422566&#34;&gt;教程2&lt;/a&gt; | &lt;a href=&#34;https://zhuanlan.zhihu.com/p/623360039&#34;&gt;教程3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;书籍资源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/640516056&#34;&gt;zlibrary镜像&lt;/a&gt;  | &lt;a href=&#34;https://zbook.eu.org/&#34;&gt;zbook&lt;/a&gt; | &lt;a href=&#34;https://zlib.app/?ref=www.tboxn.com&#34;&gt;zlibrary 检索&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookauthority.org/categories&#34;&gt;bookauthority&lt;/a&gt; | &lt;a href=&#34;http://libgen.rs/&#34;&gt;Library Genesis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bookstack.cn/&#34;&gt;书栈网&lt;/a&gt; | &lt;a href=&#34;https://fire100.top/&#34;&gt;fire100&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编程语言&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C&lt;/li&gt;
+&lt;li&gt;C++
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.cppreference.com/w/&#34;&gt;c/c++文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stibel.icu/&#34;&gt;C++全栈知识体系&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xiaoweiChen/CPP-Concurrency-In-Action-2ed-2019&#34;&gt;《C++并发编程实战》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;java&lt;/li&gt;
+&lt;li&gt;Rust
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kaisery.github.io/trpl-zh-cn/foreword.html&#34;&gt;《Rust 程序设计语言 简体中文版》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.practice.rs/why-exercise.html&#34;&gt;Rust语言实战&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bytetech.info/article/series/detail/7249298590660001847?from=kapian&amp;amp;sort=LATEST&#34;&gt;Rust 从入门到实践 （语法篇+异步篇+实战篇）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编程基础&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数据结构与算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;leetcode热题100&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;操作系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算机网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设计模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据库&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;深度学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;《动手学深度学习》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《深度学习原理与PyTorch实战（第2版）》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.pytorchmaster.com/&#34;&gt;20天吃透Pytorch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pytorch123.com/&#34;&gt;PyTorch官方教程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datawhalechina.github.io/thorough-pytorch/&#34;&gt;深入浅出PyTorch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;机器学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/&#34;&gt;kaggle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;博客&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jekyll相关
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Websites for you and your projects.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.github.com/zh/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll&#34;&gt;使用 Jekyll 向 GitHub Pages 站点添加主题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/themes/&#34;&gt;Supported themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;hugo主题
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dillonzq/LoveIt&#34;&gt;LoveIt&lt;/a&gt; | &lt;a href=&#34;https://github.com/luizdepra/hugo-coder/tree/main&#34;&gt;hugo-coder&lt;/a&gt; | &lt;a href=&#34;https://github.com/guangzhengli/hugo-theme-ladder&#34;&gt;hugo-theme-ladder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;优质博客
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.howie6879.com/&#34;&gt;老胡的储物柜&lt;/a&gt; | &lt;a href=&#34;https://shaohanyun.top/&#34;&gt;田少晗的个人博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在线编辑器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://editor.mdnice.com/&#34;&gt;Markdown Nice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lunarvim.org/zh-Hans/&#34;&gt;lunarvim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VsCode&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.51cto.com/article/704237.html&#34;&gt;14个Vscode插件推荐&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实用工具&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit&#34;&gt;ZoomIt:一个用于技术演示的屏幕缩放、注释和记录工具&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>第一篇博客</title>
       <link>https://Junhaodada.github.io/blog/first-blog/</link>
