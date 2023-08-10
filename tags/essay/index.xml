@@ -61,5 +61,281 @@
 &lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Uj411Z7Cz&#34;&gt;纯干货：如何通过个人努力进入到高级阶层？&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>工具整理</title>
+      <link>https://Junhaodada.github.io/blog/essay/tool-list/</link>
+      <pubDate>Wed, 09 Aug 2023 17:31:32 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/essay/tool-list/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;常用工具整理列表集合&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;咨询&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;中文&lt;/th&gt;
+&lt;th&gt;英文&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.bilibili.com/index.html&#34;&gt;哔哩哔哩 (゜-゜)つロ 干杯~-bilibili&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.youtube.com/&#34;&gt;YouTuBe&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.zhihu.com/&#34;&gt;首页 - 知乎&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.twitter.com&#34;&gt;Twitter&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.csdn.net/?spm=1010.2135.3001.4476&#34;&gt;CSDN - 专业开发者社区&lt;/a&gt; | &lt;a href=&#34;https://juejin.cn/&#34;&gt;稀土掘金&lt;/a&gt; | &lt;a href=&#34;https://www.oschina.net/&#34;&gt;OSCHINA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://weibo.com/&#34;&gt;微博 - 随时随地发生新鲜事&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.facebook.com/&#34;&gt;facebook&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.douyin.com/&#34;&gt;抖音-记录美好生活&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.tiktok.com/foryou&#34;&gt;TikTok&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;期刊杂志&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.com/&#34;&gt;TIME | Current &amp;amp; Breaking News | National &amp;amp; World Updates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;工具箱&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tboxn.com/&#34;&gt;Tbox导航 | 只收录优质在线工具的导航网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kaifa.baidu.com/?ref=www.tboxn.com&#34;&gt;开发者搜索-Beta-让技术搜索更简单高效&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.githubs.cn/&#34;&gt;GitHub中文社区 | GitHub中文网&lt;/a&gt; |  &lt;a href=&#34;https://github.com/GrowingGit/GitHub-Chinese-Top-Charts&#34;&gt;GitHub中文排行榜&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trending&#34;&gt;Trending repositories on GitHub today&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hellogithub.com/&#34;&gt;hellogithub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;chatgpt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LiLittleCat/awesome-free-chatgpt&#34;&gt;免费的 ChatGPT 镜像网站列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://claude.ai/chat/fb466aab-f339-4cbd-8e04-b556a3a1b6e8&#34;&gt;Claude2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mingw64&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mingw-w64.org/&#34;&gt;mingw-w64官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/djzhao627/article/details/122999240&#34;&gt;国内开源镜像网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/289073950/answer/2677581534&#34;&gt;windows安装gcc？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/jiemashizhen/article/details/127582991&#34;&gt;Ubuntu(22.04)：安装SSH&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;学术&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ccf.org.cn/Academic_Evaluation/By_category/&#34;&gt;中国计算机学会推荐国际学术会议和期刊目录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scopus.com/freelookup/form/author.uri&#34;&gt;scopus-author检索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yarpiz.com/&#34;&gt;Yarpiz-学术源代码和教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PKUFlyingPig/cs-self-learning&#34;&gt;CS自学指南&lt;/a&gt; | &lt;a href=&#34;https://cloud-atlas.readthedocs.io/zh_CN/latest/index.html&#34;&gt;云图 – 云计算图志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dictionary.cambridge.org/zhs/&#34;&gt;剑桥翻译&lt;/a&gt; | &lt;a href=&#34;https://fanyi.sogou.com/&#34;&gt;搜狗翻译&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://v2rayse.com/&#34;&gt;科学上网工具箱&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=pTlso8m_iRk&#34;&gt;Linux科学上网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/480198804&#34;&gt;如何申请软著&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tool.lu/ip/&#34;&gt;IP地址查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学校政策
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://graduate.bjut.edu.cn/info/1110/1722.htm&#34;&gt;关于修订及印制2023版研究生培养方案的通知-北京工业大学研究生院&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yanzhao.bjut.edu.cn/info/1020/5730.htm&#34;&gt;北京工业大学2023年硕士学位研究生招生章程-北京工业大学研究生招生网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bjut.edu.cn/info/1102/1149.htm&#34;&gt;研究生奖助学金-北京工业大学|Beijing University of Technology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xxgk.bjut.edu.cn/xxgkqd/xsglfwxx/jxjsq.htm&#34;&gt;奖学金申请-北京工业大学信息公开网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;优化器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cplex&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://ibm.ent.box.com/s/wjuh81fmorssmwwoe4eg2spfl9xrakvn&#34;&gt;cplex安装包&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://ibmdecisionoptimization.github.io/docplex-doc/mp/index.html&#34;&gt;docplex文档&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://brucehan.top/2020/02/02/docplex/&#34;&gt;教程1&lt;/a&gt; | &lt;a href=&#34;https://zhuanlan.zhihu.com/p/124422566&#34;&gt;教程2&lt;/a&gt; | &lt;a href=&#34;https://zhuanlan.zhihu.com/p/623360039&#34;&gt;教程3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;书籍资源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/640516056&#34;&gt;zlibrary镜像&lt;/a&gt;  | &lt;a href=&#34;https://zbook.eu.org/&#34;&gt;zbook&lt;/a&gt; | &lt;a href=&#34;https://zlib.app/?ref=www.tboxn.com&#34;&gt;zlibrary 检索&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookauthority.org/categories&#34;&gt;bookauthority&lt;/a&gt; | &lt;a href=&#34;http://libgen.rs/&#34;&gt;Library Genesis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bookstack.cn/&#34;&gt;书栈网&lt;/a&gt; | &lt;a href=&#34;https://fire100.top/&#34;&gt;fire100&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编程语言&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C&lt;/li&gt;
+&lt;li&gt;C++
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.cppreference.com/w/&#34;&gt;c/c++文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stibel.icu/&#34;&gt;C++全栈知识体系&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xiaoweiChen/CPP-Concurrency-In-Action-2ed-2019&#34;&gt;《C++并发编程实战》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;java&lt;/li&gt;
+&lt;li&gt;Rust
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kaisery.github.io/trpl-zh-cn/foreword.html&#34;&gt;《Rust 程序设计语言 简体中文版》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.practice.rs/why-exercise.html&#34;&gt;Rust语言实战&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bytetech.info/article/series/detail/7249298590660001847?from=kapian&amp;amp;sort=LATEST&#34;&gt;Rust 从入门到实践 （语法篇+异步篇+实战篇）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编程基础&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数据结构与算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;leetcode热题100&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;操作系统&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.xiaolincoding.com/os/&#34;&gt;图解系统-小林&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1uW411f72n&#34;&gt;操作系统 - 清华大学&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算机网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设计模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据库&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;深度学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;《动手学深度学习》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《深度学习原理与PyTorch实战（第2版）》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.pytorchmaster.com/&#34;&gt;20天吃透Pytorch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pytorch123.com/&#34;&gt;PyTorch官方教程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://datawhalechina.github.io/thorough-pytorch/&#34;&gt;深入浅出PyTorch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;机器学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/&#34;&gt;kaggle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;博客&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jekyll相关
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Websites for you and your projects.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.github.com/zh/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll&#34;&gt;使用 Jekyll 向 GitHub Pages 站点添加主题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/themes/&#34;&gt;Supported themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;hugo主题
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dillonzq/LoveIt&#34;&gt;LoveIt&lt;/a&gt; | &lt;a href=&#34;https://github.com/luizdepra/hugo-coder/tree/main&#34;&gt;hugo-coder&lt;/a&gt; | &lt;a href=&#34;https://github.com/guangzhengli/hugo-theme-ladder&#34;&gt;hugo-theme-ladder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;优质博客
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.howie6879.com/&#34;&gt;老胡的储物柜&lt;/a&gt; | &lt;a href=&#34;https://shaohanyun.top/&#34;&gt;田少晗的个人博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在线编辑器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://editor.mdnice.com/&#34;&gt;Markdown Nice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lunarvim.org/zh-Hans/&#34;&gt;lunarvim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VsCode&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.51cto.com/article/704237.html&#34;&gt;14个Vscode插件推荐&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实用工具&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit&#34;&gt;ZoomIt:一个用于技术演示的屏幕缩放、注释和记录工具&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>第一篇博客</title>
+      <link>https://Junhaodada.github.io/blog/essay/first-blog/</link>
+      <pubDate>Tue, 08 Aug 2023 20:23:39 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/essay/first-blog/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;一个真正意义的学术博客!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天我终于下定决心，搭建了一个真正简约美观的学术博客。在一番搜索之后，我终于在若干主题中选定了&lt;code&gt;Ladder&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

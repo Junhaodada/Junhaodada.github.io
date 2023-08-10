@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Junhaodada.github.io/blog/</loc>
-    <lastmod>2023-08-09T18:59:33+08:00</lastmod>
+    <loc>https://Junhaodada.github.io/blog/book/mou-wei/</loc>
+    <lastmod>2023-08-10T11:29:54+08:00</lastmod>
   </url><url>
-    <loc>https://Junhaodada.github.io/tags/essay/</loc>
-    <lastmod>2023-08-09T18:59:33+08:00</lastmod>
+    <loc>https://Junhaodada.github.io/blog/</loc>
+    <lastmod>2023-08-10T11:29:54+08:00</lastmod>
+  </url><url>
+    <loc>https://Junhaodada.github.io/tags/book/</loc>
+    <lastmod>2023-08-10T11:29:54+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/</loc>
-    <lastmod>2023-08-09T18:59:33+08:00</lastmod>
+    <lastmod>2023-08-10T11:29:54+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/tags/</loc>
+    <lastmod>2023-08-10T11:29:54+08:00</lastmod>
+  </url><url>
+    <loc>https://Junhaodada.github.io/tags/essay/</loc>
     <lastmod>2023-08-09T18:59:33+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/blog/essay/how-to-make-the-class-leap/</loc>
@@ -26,9 +32,6 @@
     <loc>https://Junhaodada.github.io/blog/share/recommend-a-good-code-markup-plugin/</loc>
     <lastmod>2023-08-09T18:40:22+08:00</lastmod>
   </url><url>
-    <loc>https://Junhaodada.github.io/tags/book/</loc>
-    <lastmod>2023-08-09T18:31:20+08:00</lastmod>
-  </url><url>
     <loc>https://Junhaodada.github.io/blog/book/the-kill-room/</loc>
     <lastmod>2023-08-09T18:31:20+08:00</lastmod>
   </url><url>
@@ -41,13 +44,10 @@
     <loc>https://Junhaodada.github.io/blog/movie/the-storied-life-of-a.j.fikry/</loc>
     <lastmod>2023-08-09T17:41:21+08:00</lastmod>
   </url><url>
-    <loc>https://Junhaodada.github.io/blog/tool-list/</loc>
+    <loc>https://Junhaodada.github.io/blog/essay/tool-list/</loc>
     <lastmod>2023-08-09T17:31:32+08:00</lastmod>
   </url><url>
-    <loc>https://Junhaodada.github.io/blog/first-blog/</loc>
-    <lastmod>2023-08-08T20:23:39+08:00</lastmod>
-  </url><url>
-    <loc>https://Junhaodada.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://Junhaodada.github.io/blog/essay/first-blog/</loc>
     <lastmod>2023-08-08T20:23:39+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/archives/</loc>
@@ -65,5 +65,7 @@
     <loc>https://Junhaodada.github.io/read/</loc>
   </url><url>
     <loc>https://Junhaodada.github.io/about/</loc>
+  </url><url>
+    <loc>https://Junhaodada.github.io/study/</loc>
   </url>
 </urlset>
