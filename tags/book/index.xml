@@ -35,7 +35,7 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;批注&#34;&gt;批注&lt;/h2&gt;
-&lt;h2 id=&#34;第1章-现金原始投资资产负债应付票据所有者权益资产负债表存货盈利费用&#34;&gt;第1章 现金、原始投资、资产、负债、应付票据、所有者权益、资产负债表、存货、盈利、费用&lt;/h2&gt;
+&lt;h3 id=&#34;第1章-现金原始投资资产负债应付票据所有者权益资产负债表存货盈利费用&#34;&gt;第1章 现金、原始投资、资产、负债、应付票据、所有者权益、资产负债表、存货、盈利、费用&lt;/h3&gt;
 &lt;p&gt;现在让我们从柠檬汁售货摊说起。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我们怎样称呼这5张面值1美元的钱？现金！&lt;/p&gt;
@@ -101,7 +101,34 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;资产负债表&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_29.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_30.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_30.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第2章-毛利净利润利润表现金流量&#34;&gt;第2章 毛利、净利润、利润表、现金流量&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;商品销售成本&lt;/code&gt;与产品直接关联或是说柠檬汁。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;毛利&lt;/code&gt;就是销售收入减去商品销售成本的结果。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;利润表&lt;/code&gt;有开始和结束。利润表的编制目的在于记录销售收入减去销售成本而获得企业某段时期的毛利，然后，再剔除所发生的其他费用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;利润表的成本&lt;/code&gt;分为两类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;商品销售成本，其囊括了产品生产过程中所有的支出；&lt;/li&gt;
+&lt;li&gt;费用，其囊括了企业经营中与产品生产不直接相关的其他支出。对于那些没有有形产品的公司（即服务类行业），这两类称为营业成本（又称服务成本）及费用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;净利润&lt;/code&gt;即纯利润、底线值。收益、净利、纯利、底线值，它们都是一个概念。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;期末存货&lt;/code&gt;即没有卖完的柠檬汁。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;实际已售存货成本&lt;/code&gt;=期初存货+买入存货-期末存货&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;净利润=销售收入-销售成本-费用&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;经营脉络&#34;&gt;经营脉络&lt;/h2&gt;
+&lt;p&gt;首先来回顾一下第一章的经营情况：&lt;/p&gt;
+&lt;p&gt;初始：初始投资是5美元(初始投资)，向父母借款10美元(应付票据)，当前现金15美元，起始的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_15.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;采购：使用12美元采购50个柠檬(20美分)、5磅白糖(40美分)、2加仑水(免费)，这些生产所需的原材料构成存货，此时资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230812104037277.png&#34; alt=&#34;image-20230812104037277&#34;&gt;&lt;/p&gt;
+&lt;p&gt;经营：以上原材料可生产60杯柠檬水，所以每杯柠檬水成本为20美分，售价为50美分，销售50杯柠檬水后，销售收入25美元，所以现金变为25+3=28美元，而10杯柠檬水的存货为10*20美分=2美元，当前资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230812110645320.png&#34; alt=&#34;image-20230812110645320&#34;&gt;&lt;/p&gt;
+&lt;p&gt;缴纳费用偿还票据：花2美元租玻璃杯，1美元做广告，另外2美元租场地，费用为5美元，并从盈利中扣除费用，而左边现金为28-10-5=13，归还应付票据10美元后的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_40.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;第二章针对第一章的经营情况制作的利润表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content//blog/book/CB_621893_epub_621893_41.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;观察利润表可以发现：本周盈利（位于资产负债表中）和净利润（位于利润表）应该相同，存货也相同。利润表将期初资产负债表与期末资产负债表连结起来。&lt;/p&gt;</description>
     </item>
     
     <item>
