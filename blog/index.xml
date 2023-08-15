@@ -9,7 +9,22 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Fri, 11 Aug 2023 10:58:32 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 22:34:08 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>再见baobao</title>
+      <link>https://Junhaodada.github.io/blog/essay/goodbye-baobao/</link>
+      <pubDate>Mon, 14 Aug 2023 22:34:08 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/essay/goodbye-baobao/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;2023年8月12日&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;始于隆冬，终于季夏。十二载的陪伴。&lt;/p&gt;
+&lt;p&gt;春夏与秋冬蹉跎了岁月，守护与陪伴璀璨其一生。&lt;/p&gt;
+&lt;p&gt;夕阳下不舍的目送，风雪中久盼的重逢。&lt;/p&gt;
+&lt;p&gt;真情永系家人，忠烈再睹孤梦。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>《世界上最简单的会计书》·读书笔记</title>
       <link>https://Junhaodada.github.io/blog/book/the-accounting-game/</link>
@@ -115,20 +130,63 @@
 &lt;p&gt;&lt;code&gt;期末存货&lt;/code&gt;即没有卖完的柠檬汁。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;实际已售存货成本&lt;/code&gt;=期初存货+买入存货-期末存货&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;净利润=销售收入-销售成本-费用&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
+&lt;h3 id=&#34;第3章-留存收益贷款赊账应付账款应付票据&#34;&gt;第3章 留存收益、贷款、赊账、应付账款、应付票据&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;如何将周期末资产负债表转换为本周期初资产负债表&lt;/code&gt;？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;期末存货-&amp;gt;期初存货&lt;/li&gt;
+&lt;li&gt;上周盈利-&amp;gt;留存收益&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那么以前的盈利或是过去会计期间的利润又该称做什么？留存收益。&lt;/p&gt;
+&lt;p&gt;是的，就是留存收益。那我们需要为哪个期间的收益项目保留一个位置？本周。为了放置本周的盈利，我们打算把上周的利润一直滚存到本周，这是一个新科目，叫做“留存收益”。&lt;/p&gt;
+&lt;p&gt;留存收益这个项目告诉我们迄今为止的累积盈利是从什么时候开始核算的？本次会计期间以前的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;留存收益&lt;/code&gt;：是过去会计期间的累积盈利。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;贷款&lt;/code&gt;：增加了现金，产生了应付票据。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;赊账&lt;/code&gt;：增加了存货，产生了应付账款。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;应付票据与应付账款对比&lt;/code&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;应付票据因收到他人的借款而产生，而应付账款因为赊账购买原材料等物品而产生&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因应付票据而获得现金，因应付账款而获得商品或服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;应付账款的还款期限较短，通常是30天。应付票据的还款期限较长，可能会长达几年。这就是应付账款被列在负债类首位的原因，负债项目的排列通常根据各类债务到期的期限长短来列示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这两类债务都是建立在信用的基础上&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;经营脉络&#34;&gt;经营脉络&lt;/h2&gt;
 &lt;p&gt;首先来回顾一下第一章的经营情况：&lt;/p&gt;
-&lt;p&gt;初始：初始投资是5美元(初始投资)，向父母借款10美元(应付票据)，当前现金15美元，起始的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;初始：初始投资是5美元(&lt;code&gt;初始投资&lt;/code&gt;)，向父母借款10美元(&lt;code&gt;应付票据&lt;/code&gt;)，当前现金15美元，起始的资产负债表如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_15.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;采购：使用12美元采购50个柠檬(20美分)、5磅白糖(40美分)、2加仑水(免费)，这些生产所需的原材料构成存货，此时资产负债表如下：&lt;/p&gt;
+&lt;p&gt;采购：使用12美元采购50个柠檬(20美分)、5磅白糖(40美分)、2加仑水(免费)，这些生产所需的原材料构成&lt;code&gt;存货&lt;/code&gt;，此时资产负债表如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230812104037277.png&#34; alt=&#34;image-20230812104037277&#34;&gt;&lt;/p&gt;
 &lt;p&gt;经营：以上原材料可生产60杯柠檬水，所以每杯柠檬水成本为20美分，售价为50美分，销售50杯柠檬水后，销售收入25美元，所以现金变为25+3=28美元，而10杯柠檬水的存货为10*20美分=2美元，当前资产负债表如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230812110645320.png&#34; alt=&#34;image-20230812110645320&#34;&gt;&lt;/p&gt;
-&lt;p&gt;缴纳费用偿还票据：花2美元租玻璃杯，1美元做广告，另外2美元租场地，费用为5美元，并从盈利中扣除费用，而左边现金为28-10-5=13，归还应付票据10美元后的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;缴纳&lt;code&gt;费用&lt;/code&gt;偿还&lt;code&gt;票据&lt;/code&gt;花2美元租玻璃杯，1美元做广告，另外2美元租场地，费用为5美元，并从盈利中扣除费用，而左边现金为28-10-5=13，归还应付票据10美元后的资产负债表如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/CB_621893_epub_621893_40.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第二章针对第一章的经营情况制作的利润表如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content//blog/book/CB_621893_epub_621893_41.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;观察利润表可以发现：本周盈利（位于资产负债表中）和净利润（位于利润表）应该相同，存货也相同。利润表将期初资产负债表与期末资产负债表连结起来。&lt;/p&gt;</description>
+&lt;p&gt;观察&lt;code&gt;利润表&lt;/code&gt;可以发现：本周盈利（位于资产负债表中）和&lt;code&gt;净利润&lt;/code&gt;（位于利润表）应该相同，存货也相同。利润表将期初资产负债表与期末资产负债表连结起来。&lt;/p&gt;
+&lt;p&gt;第三章，我们开始了第二周的经营。注意第一周结束时期末资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814231227893.png&#34; alt=&#34;image-20230814231227893&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在开始第二周之前，第一周(会计期间)结束时期末资产负债表中的期末存货变为了第二周的期初存货，上一周的本周盈利需要变为本周的&lt;code&gt;留存收益&lt;/code&gt;，所以第二周的期初资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814231134885.png&#34; alt=&#34;image-20230814231134885&#34;&gt;&lt;/p&gt;
+&lt;p&gt;向银行&lt;code&gt;贷款&lt;/code&gt;50美元后的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814231651475.png&#34; alt=&#34;image-20230814231651475&#34;&gt;&lt;/p&gt;
+&lt;p&gt;为防止柠檬水无法保鲜，将剩余2美元存货卖给朋友(书中有错误，每杯成本价应该为20美分)，需要注意这笔交易没有造成本周盈利增加，但是仍然需要将其加入到本周利润表的销售收入总额上。此时的资产负债表如下，：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814232159772.png&#34; alt=&#34;image-20230814232159772&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接着以每磅40美分的价格购买10磅白糖，之前是5磅白糖40美分(与杂货店老板交流的结果，互利互惠)。总共赊账4美元。赊账金额叫做&lt;code&gt;应付账款&lt;/code&gt;。资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814233712526.png&#34; alt=&#34;image-20230814233712526&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注意：银行欠款-应付票据得到了现金，赊账欠款-应付账款得到了存货。&lt;/p&gt;
+&lt;p&gt;购买了20美元的柠檬(每个20美分的价格买入100个鲜柠檬)之后的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814233910795.png&#34; alt=&#34;image-20230814233910795&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注意此时，存货包括：100个鲜柠檬(20美元)、10磅白糖(4美元)。&lt;/p&gt;
+&lt;p&gt;第4章开始了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -641,6 +699,11 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kadaza.com/&#34;&gt;Kadaza - The Ultimate Homepage &amp;amp; Web Portal &amp;mdash; Kadaza - 终极主页和门户网站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.reddit.com/&#34;&gt;Reddit - Dive into anything &amp;mdash; Reddit - 深入了解任何内容&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.reuters.com/&#34;&gt;Reuters | Breaking International News &amp;amp; Views &amp;mdash; 路透社 |突发国际新闻和观点&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Main_Page&#34;&gt;Wikipedia, the free encyclopedia &amp;mdash; 维基百科，自由的百科全书&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://immersivetranslate.com/docs/sites/#%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA&#34;&gt;探索互联网上高质量的内容 | 沉浸式翻译&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;期刊杂志&#34;&gt;期刊杂志&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://time.com/&#34;&gt;TIME | Current &amp;amp; Breaking News | National &amp;amp; World Updates&lt;/a&gt;&lt;/li&gt;
@@ -1013,6 +1076,9 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://onboarding.immersivetranslate.com/step-3/&#34;&gt;沉浸式翻译 - 开始使用&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;平台搭建&#34;&gt;平台搭建&lt;/h2&gt;
 &lt;ul&gt;
@@ -1069,7 +1135,7 @@
 &lt;li&gt;
 &lt;p&gt;优质博客&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.howie6879.com/&#34;&gt;老胡的储物柜&lt;/a&gt; | &lt;a href=&#34;https://shaohanyun.top/&#34;&gt;田少晗的个人博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.howie6879.com/&#34;&gt;老胡的储物柜&lt;/a&gt; | &lt;a href=&#34;https://shaohanyun.top/&#34;&gt;田少晗的个人博客&lt;/a&gt; | &lt;a href=&#34;http://www.9ong.com/&#34;&gt;9ong&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
