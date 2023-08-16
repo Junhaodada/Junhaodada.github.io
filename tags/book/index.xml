@@ -9,7 +9,45 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Fri, 11 Aug 2023 10:58:32 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 17:20:27 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《操作系统导论》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/operating-systems-three-easy-pieces/</link>
+      <pubDate>Wed, 16 Aug 2023 17:20:27 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/operating-systems-three-easy-pieces/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;系统学习操作系统&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《超越平庸：在央企担任总经理的岁月》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/beyond-mediocrity/</link>
+      <pubDate>Wed, 16 Aug 2023 17:18:30 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/beyond-mediocrity/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;挽狂澜于既倒，扶大厦之将倾&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《机器学习：公式推导与代码实现》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/</link>
+      <pubDate>Wed, 16 Aug 2023 17:11:15 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;统计学习方法和西瓜书之后的实战参考书籍&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/luwill/Machine_Learning_Code_Implementation&#34;&gt;github仓库&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>《世界上最简单的会计书》·读书笔记</title>
       <link>https://Junhaodada.github.io/blog/book/the-accounting-game/</link>

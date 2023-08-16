@@ -9,7 +9,85 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Mon, 14 Aug 2023 22:34:08 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 17:41:02 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《C&#43;&#43;新经典》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/cpp-new-classic/</link>
+      <pubDate>Wed, 16 Aug 2023 17:41:02 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/cpp-new-classic/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;C++ 入门神书&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《操作系统导论》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/operating-systems-three-easy-pieces/</link>
+      <pubDate>Wed, 16 Aug 2023 17:20:27 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/operating-systems-three-easy-pieces/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;系统学习操作系统&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《超越平庸：在央企担任总经理的岁月》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/beyond-mediocrity/</link>
+      <pubDate>Wed, 16 Aug 2023 17:18:30 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/beyond-mediocrity/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;挽狂澜于既倒，扶大厦之将倾&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《机器学习：公式推导与代码实现》·读书笔记</title>
+      <link>https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/</link>
+      <pubDate>Wed, 16 Aug 2023 17:11:15 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;统计学习方法和西瓜书之后的实战参考书籍&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/luwill/Machine_Learning_Code_Implementation&#34;&gt;github仓库&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>PyCharm快捷键整理</title>
+      <link>https://Junhaodada.github.io/blog/cs/pycharm-shortcut/</link>
+      <pubDate>Wed, 16 Aug 2023 16:36:43 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/cs/pycharm-shortcut/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;PyCharm 优秀的工具&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作为VsCode患者，使用其他IDE的体验总是不尽人意，今天打开VsCode继续codeing结果错误提示不显示了，而且界面也十分卡顿，所以立刻下载了2023.2版本的PyCharm，惊奇的发现界面变得十分美观。两种工具的快捷键不尽相同，刚开始用也非常的不顺手，经过一番搜索后……&lt;/p&gt;
+&lt;p&gt;PyChatm快捷键整理：&lt;/p&gt;
+&lt;p&gt;代码行上下移动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同时按下 &lt;code&gt;alt + shift +向上箭头&lt;/code&gt;，即向上移动；同时按下&lt;code&gt; alt + shift +向下箭头&lt;/code&gt;，即向下移动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;代码左右缩进&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;右缩进：鼠标选中多行代码后，按下&lt;code&gt;Tab&lt;/code&gt;键，一次缩进四个字符&lt;/li&gt;
+&lt;li&gt;左缩进： 鼠标选中多行代码后，同时按住&lt;code&gt;shift+Tab&lt;/code&gt;键，一次左移四个字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;光标移动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;移动到行首：按下&amp;quot;&lt;code&gt;Home&lt;/code&gt;&amp;ldquo;键，将光标移动到当前行的开头。&lt;/li&gt;
+&lt;li&gt;移动到行尾：按下&amp;rdquo;&lt;code&gt;End&lt;/code&gt;&amp;ldquo;键，将光标移动到当前行的末尾。&lt;/li&gt;
+&lt;li&gt;跳转到指定行：按下&amp;rdquo;&lt;code&gt;Ctrl + G&lt;/code&gt;&amp;ldquo;键，输入要跳转的行号，然后按下&amp;quot;Enter&amp;quot;键即可跳转到指定行。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>再见baobao</title>
       <link>https://Junhaodada.github.io/blog/essay/goodbye-baobao/</link>

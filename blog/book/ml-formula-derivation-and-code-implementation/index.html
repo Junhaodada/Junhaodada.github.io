@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>迁移学习入门</title>
+    <title>《机器学习：公式推导与代码实现》·读书笔记</title>
     <meta charset="utf-8">
     <meta name="description" content="Ladder@
-迁移学习入门教程
+统计学习方法和西瓜书之后的实战参考书籍
 ">
     <meta name="author" content="Junhaodada&#39;s Blog">
-    <link rel="canonical" href="https://Junhaodada.github.io/blog/share/getting-started-with-transfer-learning/">
+    <link rel="canonical" href="https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/">
         <meta name="google-site-verification" content="xxx">
 
     <link rel="alternate" type="application/rss+xml" href="https://Junhaodada.github.io/index.xml" title="Junhaodada&#39;s Blog">
@@ -28,19 +28,19 @@ if (!doNotTrack) {
 
 <script async defer data-website-id="2320eaa6-a90b-471c-b6ca-e79dadde8c4c" src="https://umami-ochre-nu.vercel.app/hugo-ladder.js"></script>
 
-    <meta property="og:title" content="迁移学习入门" />
+    <meta property="og:title" content="《机器学习：公式推导与代码实现》·读书笔记" />
 <meta property="og:description" content="
-迁移学习入门教程
+统计学习方法和西瓜书之后的实战参考书籍
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Junhaodada.github.io/blog/share/getting-started-with-transfer-learning/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-08-09T18:57:45+08:00" />
-<meta property="article:modified_time" content="2023-08-09T18:57:45+08:00" />
+<meta property="og:url" content="https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-08-16T17:11:15+08:00" />
+<meta property="article:modified_time" content="2023-08-16T17:11:15+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="迁移学习入门"/>
+<meta name="twitter:title" content="《机器学习：公式推导与代码实现》·读书笔记"/>
 <meta name="twitter:description" content="
-迁移学习入门教程
+统计学习方法和西瓜书之后的实战参考书籍
 "/>
 
 
@@ -58,8 +58,8 @@ if (!doNotTrack) {
     {
       "@type": "ListItem",
       "position":  3 ,
-      "name": "迁移学习入门",
-      "item": "https://Junhaodada.github.io/blog/share/getting-started-with-transfer-learning/"
+      "name": "《机器学习：公式推导与代码实现》·读书笔记",
+      "item": "https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/"
     }
   ]
 }
@@ -68,24 +68,24 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "迁移学习入门",
-  "name": "迁移学习入门",
-  "description": " 迁移学习入门教程\n",
+  "headline": "《机器学习：公式推导与代码实现》·读书笔记",
+  "name": "《机器学习：公式推导与代码实现》·读书笔记",
+  "description": " 统计学习方法和西瓜书之后的实战参考书籍\n",
   "keywords": [
-    "share"
+    "book"
   ],
-  "articleBody": " 迁移学习入门教程\n在2016年的神经信息处理系统大会(Conference and Workshop on Neural Information Processing Systems，NIPS)上，前百度首席科学家、斯坦福大学教授吴恩达表示：“在监督学习之后，迁移学习将引领下一波机器学习技术商业化浪潮。”\n定义 我们首先来看一下迁移学习的定义：\n直观上理解，迁移学习就是使用已有的知识来学习新的知识，即“举一反三”的能力。比如使用猫狗图像分类的网络经过少量的训练便能够去分辨老虎和狮子 。\n迁移学习可以将在一个领域训练的机器学习模型应用到另一个领域，在某种程度上提高了训练模型的利用率，解决数据缺失的问题（某些新兴领域可能缺乏训练数据），所以利用迁移学习，我们可以将在大数据集上训练好的大型网络迁移到小数据集上，从而只需经过少量的训练就能达到良好的效果。\n监督学习vs迁移学习 监督学习要求训练集和测试集上的数据具有相同的分布特性。（分布特性，如猫狗图片的比例）\n迁移学习则不同，它允许训练集和测试集的数据有不同的分布、目标，甚至领域。因此，对比传统的机器学习可以发现，迁移学习不需要我们对每一个领域都标注大量的训练数据，这就节省了大量的人力和物力；迁移学习也不需要假定训练数据与测试数据服从相同的分布。\n分类 回顾上文提到的形式化定义，迁移学习包括两个部分：源域 $D_s$ 和源任务 $T_s$，目标域 $D_t$ 和目标任务 $T_t$，迁移学习的任务就是要把在源域学习到的任务迁移到目标域对应的目标任务上。\n什么是域？\n域 D={X,P(X)}就是数据的领域空间和数据对应的分布，在区分猫狗的例子里，X就是所有的猫和狗，P(X)就是各种猫和狗的分布。\n什么是任务？\n任务T包含X到Y的映射，即Y=f(X),Y={‘猫’,‘狗’}。\n根据各要素的不同，迁移学习的分类如下：\n应用与趋势 吴恩达在2016年NIPS 会议上展示了不同类型的机器学习算法在未来商业中的应用趋势，如图所示。 应用案例\n大模型得到的泛化模型，使用特定领域的数据进行训练，迁移得到垂直领域的小模型，\n实现 那么迁移学习如何实现呢？\n在训练阶段，迁移模块的拓扑结构和所有超参数都可以保持不变，但是权重有可能使用新的数据重新训练。是否要更新这些旧模块的权重取决于我们采取的迁移学习方式，一般有两种：预训练模式和固定值模式。\n预训练模式：迁移过来的权重视作新网络的初始权重，但是它在训练的过程中会被梯度下降算法改变数值。 固定值模式：迁移过来的部分网络在结构和权重上都保持固定的数值，训练过程仅针对迁移模块后面的全连接网络。 https://weread.qq.com/web/reader/b8c323d0813ab752fg0146c9?\nhttps://zh.wikipedia.org/wiki/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0\n",
-  "wordCount" : "1043",
+  "articleBody": " 统计学习方法和西瓜书之后的实战参考书籍\ngithub仓库 ",
+  "wordCount" : "27",
   "inLanguage": "zh",
-  "datePublished": "2023-08-09T18:57:45+08:00",
-  "dateModified": "2023-08-09T18:57:45+08:00",
+  "datePublished": "2023-08-16T17:11:15+08:00",
+  "dateModified": "2023-08-16T17:11:15+08:00",
   "author":{
     "@type": "Person",
     "name": "Junhaodada's Blog"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://Junhaodada.github.io/blog/share/getting-started-with-transfer-learning/"
+    "@id": "https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/"
   },
   "publisher": {
     "@type": "Organization",
@@ -188,90 +188,47 @@ if (!doNotTrack) {
 <div id="content">
 <article class="blog-single">
   <header class="blog-title">
-    <h1>迁移学习入门</h1>
+    <h1>《机器学习：公式推导与代码实现》·读书笔记</h1>
   </header>
 
   <p>
   <small>
-    2023年8月9日&nbsp;· 1043 字&nbsp;· 3 分钟</small>
+    2023年8月16日&nbsp;· 27 字&nbsp;· 1 分钟</small>
 
   <small>
       
       ·
       
       
-      <a href="https://Junhaodada.github.io/tags/share/">share</a>
+      <a href="https://Junhaodada.github.io/tags/book/">book</a>
       
     </small>
   
 <p>
 
   <div class="blog-toc">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#定义">定义</a></li>
-    <li><a href="#监督学习vs迁移学习">监督学习vs迁移学习</a></li>
-    <li><a href="#分类">分类</a></li>
-    <li><a href="#应用与趋势">应用与趋势</a></li>
-    <li><a href="#实现">实现</a></li>
-  </ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 
   <section class="blog-content"><blockquote>
-<p>迁移学习入门教程</p>
+<p>统计学习方法和西瓜书之后的实战参考书籍</p>
 </blockquote>
-<p><img src="https://files.mdnice.com/user/46665/4943e34a-d12a-47c3-b935-efd47c89b42c.png" alt=""></p>
-<p>在2016年的神经信息处理系统大会(Conference and Workshop on Neural Information Processing Systems，NIPS)上，前百度首席科学家、斯坦福大学教授吴恩达表示：“在监督学习之后，<strong>迁移学习</strong>将引领下一波机器学习技术商业化浪潮。”</p>
-<h2 id="定义">定义</h2>
-<p>我们首先来看一下迁移学习的定义：</p>
-<p><img src="https://files.mdnice.com/user/46665/9b076d1b-9258-4101-9e2e-4a3309cf9086.png" alt=""></p>
-<p>直观上理解，迁移学习就是使用已有的知识来学习新的知识，即“举一反三”的能力。比如使用猫狗图像分类的网络经过少量的训练便能够去分辨老虎和狮子
-。</p>
-<p>迁移学习可以将在一个领域训练的机器学习模型应用到另一个领域，在某种程度上提高了训练模型的利用率，解决数据缺失的问题（某些新兴领域可能缺乏训练数据），所以利用迁移学习，我们可以将在大数据集上训练好的大型网络迁移到小数据集上，从而只需经过少量的训练就能达到良好的效果。</p>
-<h2 id="监督学习vs迁移学习">监督学习vs迁移学习</h2>
-<p><strong>监督学习</strong>要求训练集和测试集上的数据具有相同的<strong>分布特性</strong>。（分布特性，如猫狗图片的比例）</p>
-<p><strong>迁移学习</strong>则不同，它允许训练集和测试集的数据有不同的分布、目标，甚至领域。因此，对比传统的机器学习可以发现，迁移学习不需要我们对每一个领域都标注大量的训练数据，这就节省了大量的人力和物力；迁移学习也不需要假定训练数据与测试数据服从相同的分布。</p>
-<h2 id="分类">分类</h2>
-<p>回顾上文提到的形式化定义，迁移学习包括两个部分：源域 $D_s$ 和源任务 $T_s$，目标域 $D_t$ 和目标任务 $T_t$，迁移学习的任务就是要把在源域学习到的任务迁移到目标域对应的目标任务上。</p>
-<p>什么是域？</p>
-<p>域 D={X,P(X)}就是数据的领域空间和数据对应的分布，在区分猫狗的例子里，X就是所有的猫和狗，P(X)就是各种猫和狗的分布。</p>
-<p>什么是任务？</p>
-<p>任务T包含X到Y的映射，即Y=f(X),Y={&lsquo;猫&rsquo;,&lsquo;狗&rsquo;}。</p>
-<p>根据各要素的不同，<strong>迁移学习的分类</strong>如下：</p>
-<p><img src="https://files.mdnice.com/user/46665/c01e704d-1d39-4624-9fa9-ee063d8ef22b.png" alt=""></p>
-<h2 id="应用与趋势">应用与趋势</h2>
-<p>吴恩达在2016年NIPS 会议上展示了不同类型的机器学习算法在未来商业中的应用趋势，如图所示。
-<img src="https://files.mdnice.com/user/46665/9bd6018a-2110-47bf-bbf4-7ffcbd1d8368.png" alt="">
-<strong>应用案例</strong></p>
-<p>大模型得到的泛化模型，使用特定领域的数据进行训练，迁移得到垂直领域的小模型，</p>
-<h2 id="实现">实现</h2>
-<p>那么迁移学习如何实现呢？</p>
-<p>在训练阶段，迁移模块的拓扑结构和所有超参数都可以保持不变，但是权重有可能使用新的数据重新训练。是否要更新这些旧模块的权重取决于我们采取的迁移学习方式，一般有两种：预训练模式和固定值模式。</p>
 <ul>
-<li><strong>预训练模式</strong>：迁移过来的权重视作新网络的初始权重，但是它在训练的过程中会<strong>被梯度下降算法改变数值</strong>。</li>
-</ul>
-<p><img src="https://files.mdnice.com/user/46665/9ca9f346-84c7-4dba-a184-87171bb3d202.png" alt=""></p>
-<ul>
-<li><strong>固定值模式</strong>：迁移过来的部分网络在结构和权重上都保持固定的数值，训练过程<strong>仅针对迁移模块后面的全连接网络</strong>。</li>
-</ul>
-<p><img src="https://files.mdnice.com/user/46665/5e50f353-17da-4c5f-b954-bdc3624fbd8c.png" alt=""></p>
-<!-- raw HTML omitted -->
-<p><a href="https://weread.qq.com/web/reader/b8c323d0813ab752fg0146c9">https://weread.qq.com/web/reader/b8c323d0813ab752fg0146c9</a>?</p>
-<p><a href="https://zh.wikipedia.org/wiki/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0">https://zh.wikipedia.org/wiki/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0</a></p></section>
+<li><a href="https://github.com/luwill/Machine_Learning_Code_Implementation">github仓库</a></li>
+</ul></section>
 
   
   
   <div class="paginator">
     
-    <a class="prev" href="https://Junhaodada.github.io/blog/essay/how-to-make-the-class-leap/">
+    <a class="prev" href="https://Junhaodada.github.io/blog/book/beyond-mediocrity/">
       <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3.77086 21.1546C11.0491 22.698 21.4339 21.7773 21.4339 16.3608V4.63375C21.4339 3.93962 21.3581 3.30535 21.1917 2.76787M3.77086 21.1546C1.9934 20.7777 0.973585 18.7264 1.08749 16.688C1.2668 13.479 1.15721 9.43135 1.00513 6.21507C0.87809 3.52811 3.12891 1.16316 5.51029 1.25008C9.76594 1.40542 15.377 1.20229 18.7912 1.00542C20.0864 0.930734 20.8406 1.63385 21.1917 2.76787M3.77086 21.1546C4.56586 21.4723 5.49168 21.7879 6.5 22.0658M21.1917 2.76787C23.1097 4.18217 23.13 12.4191 22.9004 16.3608C20.8478 24.0194 12.3061 23.6662 6.5 22.0658M21.1917 2.76787C21.7612 4.51192 22.7203 9.67216 22 16.3608C21.2797 23.0494 11.3665 22.9511 6.5 22.0658M9.94496 9C9.28897 9.61644 7.63215 10.997 6.04814 11.7966C5.98257 11.8297 5.98456 11.9753 6.05061 12.0063C7.05496 12.4779 8.92941 13.9264 9.94496 15M6.44444 11.9667C8.86549 12.0608 14 12 16 11" stroke="currentColor" stroke-linecap="round"/>
       </svg>
-      <span>如何实现阶层跨越</span></a>
+      <span>《超越平庸：在央企担任总经理的岁月》·读书笔记</span></a>
     
     
-    <a class="next" href="https://Junhaodada.github.io/blog/share/recommend-a-good-code-markup-plugin/"><span>推荐一款好用的代码标记插件</span>
+    <a class="next" href="https://Junhaodada.github.io/blog/cs/pycharm-shortcut/"><span>PyCharm快捷键整理</span>
       <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3.77086 21.1546C11.0491 22.698 21.4339 21.7773 21.4339 16.3608V4.63375C21.4339 3.93962 21.3581 3.30535 21.1917 2.76787M3.77086 21.1546C1.9934 20.7777 0.973585 18.7264 1.08749 16.688C1.2668 13.479 1.15721 9.43135 1.00513 6.21507C0.87809 3.52811 3.12891 1.16316 5.51029 1.25008C9.76594 1.40542 15.377 1.20229 18.7912 1.00542C20.0864 0.930734 20.8406 1.63385 21.1917 2.76787M3.77086 21.1546C4.56586 21.4723 5.49168 21.7879 6.5 22.0658M21.1917 2.76787C23.1097 4.18217 23.13 12.4191 22.9004 16.3608C20.8478 24.0194 12.3061 23.6662 6.5 22.0658M21.1917 2.76787C21.7612 4.51192 22.7203 9.67216 22 16.3608C21.2797 23.0494 11.3665 22.9511 6.5 22.0658M12.055 9C12.711 9.61644 14.3679 10.997 15.9519 11.7966C16.0174 11.8297 16.0154 11.9753 15.9494 12.0063C14.945 12.4779 13.0706 13.9264 12.055 15M15.5556 11.9667C13.1345 12.0608 8 12 6 11" stroke="currentColor" stroke-linecap="round"/>
       </svg>
