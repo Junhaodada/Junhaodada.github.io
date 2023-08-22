@@ -9,7 +9,65 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Wed, 16 Aug 2023 17:41:02 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Aug 2023 21:44:10 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>财经信息资源汇总</title>
+      <link>https://Junhaodada.github.io/blog/essay/financial-information-resources/</link>
+      <pubDate>Sun, 20 Aug 2023 21:44:10 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/essay/financial-information-resources/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;财经信息汇总&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.tradingeconomics.com/&#34;&gt;trading economics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Trading Economics为其用户提供196个国家的准确信息，包括超过2000万个经济指标，汇率，股票市场指数，政府债券收益率和商品价格的历史数据和预测。我们的数据基于官方来源，而不是第三方数据提供商，并且我们会定期检查我们的事实是否存在不一致之处。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.worldbank.org/en/home&#34;&gt;世界银行&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;世界银行集团在每一个主要发展领域开展工作。我们提供广泛的金融产品和技术援助，并帮助各国分享和应用创新知识和解决方案来应对其面临的挑战。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ourworldindata.org/&#34;&gt;Our World in Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;研究和数据，以在解决世界上最大的问题方面取得进展。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.oecd.org/&#34;&gt;OECD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;经济合作与发展组织（OECD）是一个国际组织，致力于为更美好的生活制定更好的政策。我们的目标是制定促进所有人的繁荣、平等、机会和福祉的政策。我们利用 60 年的经验和见解，更好地为明天的世界做好准备。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.imf.org/zh/home&#34;&gt;IMF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;国际货币基金组织（&lt;strong&gt;IMF ）是&lt;/strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/United_Nations&#34;&gt;联合国&lt;/a&gt;的主要金融机构，也是一个&lt;a href=&#34;https://en.wikipedia.org/wiki/International_financial_institution&#34;&gt;国际金融机构&lt;/a&gt;，总部设在&lt;a href=&#34;https://en.wikipedia.org/wiki/Washington,_D.C.&#34;&gt;华盛顿特区，由190个&lt;/a&gt;&lt;strong&gt;国家&lt;/strong&gt;组成。其明确的使命是“致力于促进全球货币合作，确保金融稳定，促进国际贸易，促进高就业和可持续经济增长，并减少世界各地的&lt;a href=&#34;https://en.wikipedia.org/wiki/Poverty&#34;&gt;贫困。”&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.stats.gov.cn/&#34;&gt;国家统计局&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;各大券商交易平台&lt;/p&gt;
+&lt;p&gt;1.纽交所30.9万亿
+2.纳斯达克10.8万亿
+3.东京证交所5.6万亿
+4.上交所4万亿
+5.港交所3.9万亿
+6.泛欧交易所3.9万亿
+7.伦敦证交所3.7万亿
+8.深交所2.5万亿
+9.多伦多证交所2.2万亿
+10.孟买证交所2万亿&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.sac.net.cn/hysj/yjpm/&#34;&gt;中国证券业协会证券公司排名&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>lunarvim安装与配置</title>
+      <link>https://Junhaodada.github.io/blog/cs/lunarvim-config/</link>
+      <pubDate>Sun, 20 Aug 2023 16:38:10 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/cs/lunarvim-config/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;难以拒绝的现代化VIM&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;lunarvim安装&#34;&gt;lunarvim安装&lt;/h2&gt;
+&lt;p&gt;参照lunarvim官网的&lt;a href=&#34;https://www.lunarvim.org/zh-Hans/docs/installation&#34;&gt;安装步骤&lt;/a&gt;，下载前置的软件和环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;请确保拥有最新版本的 &lt;a href=&#34;https://github.com/neovim/neovim/releases/latest&#34;&gt;&lt;code&gt;Neovim v0.8.0+&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;安装 &lt;a href=&#34;https://cli.github.com/&#34;&gt;&lt;code&gt;git&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.gnu.org/software/make/&#34;&gt;&lt;code&gt;make&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://pypi.org/project/pip/&#34;&gt;&lt;code&gt;pip&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.python.org/&#34;&gt;&lt;code&gt;python&lt;/code&gt;&lt;/a&gt; &lt;a href=&#34;https://npmjs.com/&#34;&gt;&lt;code&gt;npm&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://nodejs.org/&#34;&gt;&lt;code&gt;node&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.rust-lang.org/tools/install&#34;&gt;&lt;code&gt;cargo&lt;/code&gt;&lt;/a&gt; installed on your system.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally&#34;&gt;解决全局安装程序包时的EACES权限错误&lt;/a&gt;，以避免使用npm安装程序包时出错。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7.2&#34;&gt;&lt;code&gt;PowerShell 7+&lt;/code&gt;&lt;/a&gt; (Windows系统所需)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下来可选择稳定版和开发版进行安装。&lt;/p&gt;
+&lt;h2 id=&#34;下载nerd字体配置图标&#34;&gt;下载Nerd字体配置图标&lt;/h2&gt;
+&lt;p&gt;首先参考&lt;a href=&#34;https://ohmyposh.dev/docs/installation/windows&#34;&gt;ohmyposh安装&lt;/a&gt;进行ohmyposh的安装。&lt;/p&gt;
+&lt;p&gt;然后对下载Nerd font，参考&lt;a href=&#34;https://learn.microsoft.com/zh-cn/windows/terminal/tutorials/custom-prompt-setup&#34;&gt;terminal设置&lt;/a&gt;进行字体修改。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../static/content/blog/cs/Snipaste_2023-08-20_17-08-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>《C&#43;&#43;新经典》·读书笔记</title>
       <link>https://Junhaodada.github.io/blog/book/cpp-new-classic/</link>
@@ -264,7 +322,13 @@
 &lt;p&gt;购买了20美元的柠檬(每个20美分的价格买入100个鲜柠檬)之后的资产负债表如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230814233910795.png&#34; alt=&#34;image-20230814233910795&#34;&gt;&lt;/p&gt;
 &lt;p&gt;注意此时，存货包括：100个鲜柠檬(20美元)、10磅白糖(4美元)。&lt;/p&gt;
-&lt;p&gt;第4章开始了。&lt;/p&gt;</description>
+&lt;p&gt;第4章开始。&lt;/p&gt;
+&lt;p&gt;雇佣姐姐制作了60杯柠檬汁，这扎柠檬汁用了50个鲜柠檬（每个20美分）、5磅白糖（每磅40美分），并支付姐姐1美元。需要注意1美元的加工费被绑定到了存货中，本来60被柠檬汁成本12美元，加1美元，所以产成品为13美元。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230816215752206.png&#34; alt=&#34;image-20230816215752206&#34;&gt;&lt;/p&gt;
+&lt;p&gt;卖掉了这60被柠檬汁，每杯售价50美分，其中40杯的现金收款，20杯的赊账，即收入30美元。20美元的现金，10美元的应收款，本周盈利=30-13=17美元，引入应收账款后的资产负债表如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230816215852253.png&#34; alt=&#34;image-20230816215852253&#34;&gt;&lt;/p&gt;
+&lt;p&gt;因为朋友约翰欠8杯柠檬汁，产生4美元的坏账，所以左边减少应收账款，右边减少本周盈利：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/book/image-20230816215906383.png&#34; alt=&#34;image-20230816215906383&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -9,7 +9,31 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Wed, 16 Aug 2023 16:36:43 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Aug 2023 16:38:10 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lunarvim安装与配置</title>
+      <link>https://Junhaodada.github.io/blog/cs/lunarvim-config/</link>
+      <pubDate>Sun, 20 Aug 2023 16:38:10 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/cs/lunarvim-config/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;难以拒绝的现代化VIM&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;lunarvim安装&#34;&gt;lunarvim安装&lt;/h2&gt;
+&lt;p&gt;参照lunarvim官网的&lt;a href=&#34;https://www.lunarvim.org/zh-Hans/docs/installation&#34;&gt;安装步骤&lt;/a&gt;，下载前置的软件和环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;请确保拥有最新版本的 &lt;a href=&#34;https://github.com/neovim/neovim/releases/latest&#34;&gt;&lt;code&gt;Neovim v0.8.0+&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;安装 &lt;a href=&#34;https://cli.github.com/&#34;&gt;&lt;code&gt;git&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.gnu.org/software/make/&#34;&gt;&lt;code&gt;make&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://pypi.org/project/pip/&#34;&gt;&lt;code&gt;pip&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.python.org/&#34;&gt;&lt;code&gt;python&lt;/code&gt;&lt;/a&gt; &lt;a href=&#34;https://npmjs.com/&#34;&gt;&lt;code&gt;npm&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://nodejs.org/&#34;&gt;&lt;code&gt;node&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.rust-lang.org/tools/install&#34;&gt;&lt;code&gt;cargo&lt;/code&gt;&lt;/a&gt; installed on your system.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally&#34;&gt;解决全局安装程序包时的EACES权限错误&lt;/a&gt;，以避免使用npm安装程序包时出错。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7.2&#34;&gt;&lt;code&gt;PowerShell 7+&lt;/code&gt;&lt;/a&gt; (Windows系统所需)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下来可选择稳定版和开发版进行安装。&lt;/p&gt;
+&lt;h2 id=&#34;下载nerd字体配置图标&#34;&gt;下载Nerd字体配置图标&lt;/h2&gt;
+&lt;p&gt;首先参考&lt;a href=&#34;https://ohmyposh.dev/docs/installation/windows&#34;&gt;ohmyposh安装&lt;/a&gt;进行ohmyposh的安装。&lt;/p&gt;
+&lt;p&gt;然后对下载Nerd font，参考&lt;a href=&#34;https://learn.microsoft.com/zh-cn/windows/terminal/tutorials/custom-prompt-setup&#34;&gt;terminal设置&lt;/a&gt;进行字体修改。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../static/content/blog/cs/Snipaste_2023-08-20_17-08-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>PyCharm快捷键整理</title>
       <link>https://Junhaodada.github.io/blog/cs/pycharm-shortcut/</link>
