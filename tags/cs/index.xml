@@ -9,7 +9,170 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Sun, 20 Aug 2023 16:38:10 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Aug 2023 20:48:07 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VIM整理</title>
+      <link>https://Junhaodada.github.io/blog/cs/vim-shortcut/</link>
+      <pubDate>Wed, 30 Aug 2023 20:48:07 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/cs/vim-shortcut/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;远离鼠标，全面拥抱Vim&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;vim方向键&#34;&gt;Vim方向键&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;h&lt;/td&gt;
+&lt;td&gt;光标向左移动一位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;j&lt;/td&gt;
+&lt;td&gt;光标向下移动一行（以回车为换行符），也就是光标向下移动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;k&lt;/td&gt;
+&lt;td&gt;光标向上移动一行（也就是向上移动）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;l&lt;/td&gt;
+&lt;td&gt;光标向右移动一位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;vim光标以单词为单位移动&#34;&gt;Vim光标以单词为单位移动&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;w 或 W&lt;/td&gt;
+&lt;td&gt;光标移动至下一个单词的单词首&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;b 或 B&lt;/td&gt;
+&lt;td&gt;光标移动至上一个单词的单词首&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;e 或 E&lt;/td&gt;
+&lt;td&gt;光标移动至下一个单词的单词尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nw 或 nW&lt;/td&gt;
+&lt;td&gt;n 为数字，表示光标向右移动 n 个单词&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nb 或 nB&lt;/td&gt;
+&lt;td&gt;n 为数字，表示光标向左移动 n 个单词&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;vim光标移动至行首或行尾&#34;&gt;Vim光标移动至行首或行尾&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0 或 ^&lt;/td&gt;
+&lt;td&gt;光标移动至当前行的行首&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$&lt;/td&gt;
+&lt;td&gt;光标移动至当前行的行尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;n$&lt;/td&gt;
+&lt;td&gt;光标移动至当前行只有 n 行的行尾，n为数字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;vim光标移动至指定字符&#34;&gt;Vim光标移动至指定字符&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;fx&lt;/td&gt;
+&lt;td&gt;光标移动至当前行中下一个 x 字符处&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fx&lt;/td&gt;
+&lt;td&gt;光标移动至当前行中下一个 x 字符处&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;vim光标移动到指定行&#34;&gt;Vim光标移动到指定行&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;gg&lt;/td&gt;
+&lt;td&gt;光标移动到文件开头&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;G&lt;/td&gt;
+&lt;td&gt;光标移动至文件末尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nG&lt;/td&gt;
+&lt;td&gt;光标移动到第 n 行，n 为数字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;:n&lt;/td&gt;
+&lt;td&gt;编辑模式下使用的快捷键，可以将光标快速定义到指定行的行首&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;vim光标移动到匹配的括号处&#34;&gt;Vim光标移动到匹配的括号处&lt;/h2&gt;
+&lt;p&gt;程序员在编辑程序时，经常会为将光标移动到与一个 &amp;ldquo;(&amp;rdquo; 匹配的 &amp;ldquo;)&amp;rdquo; （对于 [] 和 {} 也是一样的）处而感到头疼。Vim 里面提供了一个非常方便地査找匹配括号的命令，这就是 &amp;ldquo;%&amp;quot;。&lt;/p&gt;
+&lt;p&gt;比如，在 /etc/init.d/sshd 脚本文件中（最好还是复制后练习，小心驶得万年船），想迅速地将光标定位到与第 49 行的 &amp;ldquo;{&amp;rdquo; 相对应的 &amp;ldquo;}&amp;rdquo; 处，则可以将光标先定位在 &amp;ldquo;{&amp;rdquo; 处，然后再使用 &amp;ldquo;％&amp;rdquo; 命令，使之定位在 &amp;ldquo;}&amp;rdquo; 处&lt;/p&gt;
+&lt;h2 id=&#34;vim光标上下位置&#34;&gt;Vim光标上下位置&lt;/h2&gt;
+&lt;p&gt;光标上一位置 ctrl+o&lt;/p&gt;
+&lt;p&gt;光标下一位置 ctrl+i&lt;/p&gt;
+&lt;h2 id=&#34;vim翻整半页&#34;&gt;Vim翻整/半页&lt;/h2&gt;
+&lt;p&gt;整页翻页 ctrl-f ctrl-b
+f就是forword b就是backward&lt;/p&gt;
+&lt;p&gt;翻半页
+ctrl-d ctlr-u
+d=down u=up&lt;/p&gt;
+&lt;p&gt;滚一行
+ctrl-e ctrl-y&lt;/p&gt;
+&lt;h2 id=&#34;vim光标行屏幕显示&#34;&gt;Vim光标行屏幕显示&lt;/h2&gt;
+&lt;p&gt;zz 让光标所在的行居屏幕中央
+zt 让光标所在的行居屏幕最上一行 t=top
+zb 让光标所在的行居屏幕最下一行 b=bottom&lt;/p&gt;
+&lt;h2 id=&#34;ide开启系统剪贴板&#34;&gt;IDE开启系统剪贴板&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# vscode setting&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vim.useSystemClipboard &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; true
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pycharm ideavimrc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set clipboard&lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt;unnamed
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;参考&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_42320934/article/details/126125717&#34;&gt;IDEA安装Vim插件并配置共享VIM和Windows的剪切板-CSDN&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>lunarvim安装与配置</title>
       <link>https://Junhaodada.github.io/blog/cs/lunarvim-config/</link>
@@ -31,7 +194,7 @@
 &lt;h2 id=&#34;下载nerd字体配置图标&#34;&gt;下载Nerd字体配置图标&lt;/h2&gt;
 &lt;p&gt;首先参考&lt;a href=&#34;https://ohmyposh.dev/docs/installation/windows&#34;&gt;ohmyposh安装&lt;/a&gt;进行ohmyposh的安装。&lt;/p&gt;
 &lt;p&gt;然后对下载Nerd font，参考&lt;a href=&#34;https://learn.microsoft.com/zh-cn/windows/terminal/tutorials/custom-prompt-setup&#34;&gt;terminal设置&lt;/a&gt;进行字体修改。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../../static/content/blog/cs/Snipaste_2023-08-20_17-08-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://Junhaodada.github.io/content/blog/cs/Snipaste_2023-08-20_17-08-04.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

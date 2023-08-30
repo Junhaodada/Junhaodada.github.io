@@ -2,41 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Junhaodada.github.io/blog/</loc>
-    <lastmod>2023-08-20T21:44:10+08:00</lastmod>
+    <loc>https://Junhaodada.github.io/blog/book/merits-and-demerits-of-political-systems-in-dynastic-china/</loc>
+    <lastmod>2023-08-30T20:50:51+08:00</lastmod>
   </url><url>
-    <loc>https://Junhaodada.github.io/tags/essay/</loc>
-    <lastmod>2023-08-20T21:44:10+08:00</lastmod>
+    <loc>https://Junhaodada.github.io/blog/</loc>
+    <lastmod>2023-08-30T20:50:51+08:00</lastmod>
+  </url><url>
+    <loc>https://Junhaodada.github.io/tags/book/</loc>
+    <lastmod>2023-08-30T20:50:51+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/</loc>
-    <lastmod>2023-08-20T21:44:10+08:00</lastmod>
+    <lastmod>2023-08-30T20:50:51+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/tags/</loc>
+    <lastmod>2023-08-30T20:50:51+08:00</lastmod>
+  </url><url>
+    <loc>https://Junhaodada.github.io/tags/cs/</loc>
+    <lastmod>2023-08-30T20:48:07+08:00</lastmod>
+  </url><url>
+    <loc>https://Junhaodada.github.io/blog/cs/vim-shortcut/</loc>
+    <lastmod>2023-08-30T20:48:07+08:00</lastmod>
+  </url><url>
+    <loc>https://Junhaodada.github.io/tags/essay/</loc>
     <lastmod>2023-08-20T21:44:10+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/blog/essay/financial-information-resources/</loc>
     <lastmod>2023-08-20T21:44:10+08:00</lastmod>
   </url><url>
-    <loc>https://Junhaodada.github.io/tags/cs/</loc>
-    <lastmod>2023-08-20T16:38:10+08:00</lastmod>
-  </url><url>
     <loc>https://Junhaodada.github.io/blog/cs/lunarvim-config/</loc>
     <lastmod>2023-08-20T16:38:10+08:00</lastmod>
-  </url><url>
-    <loc>https://Junhaodada.github.io/blog/book/cpp-new-classic/</loc>
-    <lastmod>2023-08-16T17:41:02+08:00</lastmod>
-  </url><url>
-    <loc>https://Junhaodada.github.io/blog/book/operating-systems-three-easy-pieces/</loc>
-    <lastmod>2023-08-16T17:20:27+08:00</lastmod>
-  </url><url>
-    <loc>https://Junhaodada.github.io/tags/book/</loc>
-    <lastmod>2023-08-16T17:20:27+08:00</lastmod>
-  </url><url>
-    <loc>https://Junhaodada.github.io/blog/book/beyond-mediocrity/</loc>
-    <lastmod>2023-08-16T17:18:30+08:00</lastmod>
-  </url><url>
-    <loc>https://Junhaodada.github.io/blog/book/ml-formula-derivation-and-code-implementation/</loc>
-    <lastmod>2023-08-16T17:11:15+08:00</lastmod>
   </url><url>
     <loc>https://Junhaodada.github.io/blog/cs/pycharm-shortcut/</loc>
     <lastmod>2023-08-16T16:36:43+08:00</lastmod>
