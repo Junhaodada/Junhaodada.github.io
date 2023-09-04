@@ -9,7 +9,44 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Wed, 30 Aug 2023 20:48:07 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 16:49:34 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;/AI面经资料</title>
+      <link>https://Junhaodada.github.io/blog/cs/cpp-ai-interview/</link>
+      <pubDate>Mon, 04 Sep 2023 16:49:34 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/cs/cpp-ai-interview/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;C++/AI相关面经资料合集&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;C++&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/issue/tutorial?tutorialId=93&amp;amp;uuid=8ba2828006dd42879f3a9029eabde9f1&#34;&gt;【C++工程师面试宝典】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Light-City/CPlusPlusThings&#34;&gt;Light-City/CPlusPlusThings: C++那些事&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/huihut/interview&#34;&gt;📚 C/C++ 技术面试基础知识总结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;p&gt;机器学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/issue/tutorial?tutorialId=95&amp;amp;uuid=17d29b1ea4bc438f8d61e90db54e6cc0&#34;&gt;【机器学习/算法工程师面试宝典】&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;深度学习&lt;/p&gt;
+&lt;p&gt;数据结构与算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nowcoder.com/exam/oj?page=1&amp;amp;tab=%E7%AE%97%E6%B3%95%E7%AF%87&amp;amp;topicId=295&#34;&gt;牛客网在线编程_算法篇_面试必刷TOP101&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nowcoder.com/exam/intelligent?questionJobId=10&amp;amp;tagId=21000&#34;&gt;牛客网专项练习_校招题库练习题_行测题库考点考题&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;面经合集&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/discuss/515584061499301888&#34;&gt;【官方干货】不允许你还不知道的字节「算法岗」面试通关密码！&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/experience/645&#34;&gt;算法工程师精选面经合集&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>VIM整理</title>
       <link>https://Junhaodada.github.io/blog/cs/vim-shortcut/</link>

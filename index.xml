@@ -9,7 +9,111 @@
     <managingEditor>junhaodada@163.com (Junhaodada)</managingEditor>
     <webMaster>junhaodada@163.com (Junhaodada)</webMaster>
     <copyright>2023 Junhaodada All rights reserved</copyright>
-    <lastBuildDate>Wed, 30 Aug 2023 20:50:51 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 16:49:34 +0800</lastBuildDate><atom:link href="https://Junhaodada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;/AI面经资料</title>
+      <link>https://Junhaodada.github.io/blog/cs/cpp-ai-interview/</link>
+      <pubDate>Mon, 04 Sep 2023 16:49:34 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/cs/cpp-ai-interview/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;C++/AI相关面经资料合集&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;C++&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/issue/tutorial?tutorialId=93&amp;amp;uuid=8ba2828006dd42879f3a9029eabde9f1&#34;&gt;【C++工程师面试宝典】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Light-City/CPlusPlusThings&#34;&gt;Light-City/CPlusPlusThings: C++那些事&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/huihut/interview&#34;&gt;📚 C/C++ 技术面试基础知识总结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;p&gt;机器学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/issue/tutorial?tutorialId=95&amp;amp;uuid=17d29b1ea4bc438f8d61e90db54e6cc0&#34;&gt;【机器学习/算法工程师面试宝典】&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;深度学习&lt;/p&gt;
+&lt;p&gt;数据结构与算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nowcoder.com/exam/oj?page=1&amp;amp;tab=%E7%AE%97%E6%B3%95%E7%AF%87&amp;amp;topicId=295&#34;&gt;牛客网在线编程_算法篇_面试必刷TOP101&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nowcoder.com/exam/intelligent?questionJobId=10&amp;amp;tagId=21000&#34;&gt;牛客网专项练习_校招题库练习题_行测题库考点考题&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;面经合集&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/discuss/515584061499301888&#34;&gt;【官方干货】不允许你还不知道的字节「算法岗」面试通关密码！&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nowcoder.com/experience/645&#34;&gt;算法工程师精选面经合集&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>2023秋数学建模准备</title>
+      <link>https://Junhaodada.github.io/blog/math/math-model-2023/</link>
+      <pubDate>Mon, 04 Sep 2023 16:44:38 +0800</pubDate>
+      <author>junhaodada@163.com (Junhaodada)</author>
+      <guid>https://Junhaodada.github.io/blog/math/math-model-2023/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;2023研究生数学建模比赛……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;资料&#34;&gt;资料&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.shumo.com/wiki/doku.php?id=%E5%85%A8%E5%9B%BD%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B_npmcm_%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98&#34;&gt;全国研究生数学建模竞赛(NPMCM)历年试题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_44203471/article/details/126634552&#34;&gt;全国研究生数学建模竞赛资料【2004-2021】【详细整理】&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/zhanwen/MathModel&#34;&gt;https://github.com/zhanwen/MathModel&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;经验&#34;&gt;经验&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/tardis/zm/art/128081571?source_id=1003&#34;&gt;中国研究生数学建模竞赛经验之谈&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://shuang96.blog.csdn.net/article/details/103097376?spm=1001.2101.3001.6650.5&amp;amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5-103097376-blog-78058425.235%5Ev38%5Epc_relevant_anti_t3_base&amp;amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5-103097376-blog-78058425.235%5Ev38%5Epc_relevant_anti_t3_base&amp;amp;utm_relevant_index=10&#34;&gt;华为杯数学建模竞赛百分百获奖经验分享（获奖 == 5分经验，4分实力，1分运气）&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;历年优秀论文分析&#34;&gt;历年优秀论文分析&lt;/h2&gt;
+&lt;h3 id=&#34;2021年&#34;&gt;&lt;strong&gt;2021年&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;【A题】相关矩阵组的低复杂度计算和存储建模&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/zh-hans/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3&#34;&gt;svd分解&lt;/a&gt;、QR分解&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/zh-hans/%E7%A7%91%E5%88%97%E6%96%AF%E5%9F%BA%E5%88%86%E8%A7%A3&#34;&gt;科列斯基分解&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_40815892/article/details/93882941&#34;&gt;AOR迭代算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E6%96%BD%E7%89%B9%E6%8B%89%E6%A3%AE%E6%BC%94%E7%AE%97%E6%B3%95&#34;&gt;Strassen算法&lt;/a&gt;减少矩阵乘法复杂度&lt;/li&gt;
+&lt;li&gt;压缩算法-哈夫曼编码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【B题】空气质量预报二次建模&lt;/p&gt;
+&lt;p&gt;对于&lt;code&gt;数据分析类&lt;/code&gt;问题，拿到数据之后需要&lt;code&gt;数据预处理&lt;/code&gt;，常用的预处理方法有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;剔除缺失值&lt;/li&gt;
+&lt;li&gt;标准化 z-score&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;之后可以对数据的特征作&lt;code&gt;相关性分析&lt;/code&gt;，如：皮尔逊相关系数，构建相关矩阵，分析不同特征之间的相关性。&lt;/p&gt;
+&lt;p&gt;之后可对样本作&lt;code&gt;聚类&lt;/code&gt;并可视化。之后作分类或预测。&lt;/p&gt;
+&lt;p&gt;聚类算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;K-means聚类&lt;/li&gt;
+&lt;li&gt;层次聚类&lt;/li&gt;
+&lt;li&gt;系统聚类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;预测模型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;多元线性回归&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BP神经网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随机森林&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CNN/LSTM&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【C题】帕金森病的脑深部电刺激治疗建模研究&lt;/p&gt;
+&lt;p&gt;与脑科学相关，有点看不懂&lt;/p&gt;
+&lt;p&gt;【D题】抗乳腺癌候选药物的优化建模&lt;/p&gt;
+&lt;p&gt;【E题】信号干扰下的超宽带&lt;/p&gt;
+&lt;p&gt;【F题】航空公司机组优化排班问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;xgboost&lt;/li&gt;
+&lt;li&gt;贪心算法&lt;/li&gt;
+&lt;li&gt;粒子群算法&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>《中国历代政治得失》·读书笔记&#39;</title>
       <link>https://Junhaodada.github.io/blog/book/merits-and-demerits-of-political-systems-in-dynastic-china/</link>
